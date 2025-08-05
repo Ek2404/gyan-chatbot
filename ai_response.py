@@ -4,6 +4,10 @@ import os
 API_KEY = os.getenv("OPENROUTER_API_KEY")  # get from environment on Render
 API_URL = "https://openrouter.ai/api/v1/chat/completions"
 
+print("🔐 API Key Found:", bool(API_KEY), "| Length:", len(API_KEY) if API_KEY else 0)
+if not API_KEY:
+    raise ValueError("❌ OPENROUTER_API_KEY environment variable is not set. Please set it before running the app.")
+
 def get_response(query):
     headers = {
         "Authorization": f"Bearer {API_KEY}",
