@@ -12,7 +12,7 @@ def get_response(query):
     headers = {
         "Authorization": f"Bearer {API_KEY}",
         "Content-Type": "application/json",
-        "HTTP-Referer": "https://gyan-chatbot.onrender.com"  # 👈 this is required by OpenRouter
+        "Referer": "https://gyan-chatbot.onrender.com"  # 👈 this is required by OpenRouter
     }
     data = {
         "model": "mistralai/mistral-small-3.1-24b-instruct:free",
