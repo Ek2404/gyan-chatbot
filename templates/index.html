@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GYAN – Guided Youth Assistance Network</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>G.Y.A.N.</h1>
+      <p class="tag">Guiding Youth with Artificial Network</p>
+    </header>
+
+    <main id="chat">
+      <!-- Messages will be appended here -->
+    </main>
+
+    <form id="chat-form">
+      <input id="query" type="text" placeholder="Ask me anything..." autocomplete="off" />
+      <button type="submit">Send</button>
+    </form>
+
+    <div class="toggles">
+      <label>
+        <input type="checkbox" id="ttsToggle" checked />
+        Speak replies (Browser TTS)
+      </label>
+    </div>
+  </div>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,229 @@
+{
+  "plurilogues": {
+    "event_name": "Plurilogues",
+    "class_range": "8–12",
+    "rounds": 2,
+    "format": "Tag Extempore + Face-off Finals",
+    "day": "Sunday, 17th August 2025",
+    "timing": "9:30 AM to 6:00 PM",
+    "description": "A multi-format English debate consisting of an extempore round followed by a face-off final between selected teams.",
+    "rules": [
+      "Each team will receive a word/phrase/term 10 minutes before the start.",
+      "Speaker 1 delivers a 1.5-minute extempore speech.",
+      "Speaker 2 immediately continues for another 1.5 minutes.",
+      "Final includes Block-and-Tackle round with stance changes on jury cues.",
+      "Each finalist has 2.5 mins (opening) + 1.5 mins (second) to speak."
+    ],
+    "prizes": [
+      "Top 5 speakers recognized and awarded",
+      "Best Speakers (Prelims, Semi-finals, Finals)",
+      "Best Delegation",
+      "Best Research Delegation",
+      "Runner-Ups (1st and Joint 3rd)"
+    ]
+  },
+  "continuum": {
+    "event_name": "Continuum",
+    "class_range": "8–12",
+    "rounds": 1,
+    "format": "Live Dialogue with Painting",
+    "day": "Sunday, 17th August 2025",
+    "timing": "9:30 AM to 6:00 PM",
+    "description": "An interdisciplinary event where participants present a dialogue about Picasso’s Guernica while creating live paintings.",
+    "rules": [
+      "Two members speak on Guernica; all three paint simultaneously.",
+      "Only wax crayons and markers allowed.",
+      "No costumes or props except 2 hats, 2 empty frames, 2 umbrellas.",
+      "A3 sheets and easels provided by host.",
+      "Use stage space creatively; connect artwork to modern context."
+    ],
+    "prizes": [
+      "Top 3 Teams",
+      "Critic’s Choice Award"
+    ]
+  },
+  "quartet": {
+    "event_name": "Quartet",
+    "class_range": "8–12",
+    "rounds": 1,
+    "format": "Experimental Theatre Production",
+    "day": "Sunday, 17th August 2025",
+    "timing": "9:30 AM to 6:00 PM",
+    "description": "A short experimental performance featuring two historical figures, a concept, and one silent performer using gestures.",
+    "rules": [
+      "Team of 4: 3 speakers and 1 silent performer.",
+      "Historical characters and abstract concepts must be included.",
+      "Only chairs/tables provided, no props, lights or mics.",
+      "Time limit: 4.5 mins including entry/exit.",
+      "Silent performer must enhance meaning through gestures."
+    ],
+    "prizes": [
+      "Top 3 Teams",
+      "Critic’s Choice Award"
+    ]
+  },
+  "scriptorium": {
+    "event_name": "Scriptorium",
+    "class_range": "8–12",
+    "rounds": 1,
+    "format": "English Creative Writing (Blended Genres)",
+    "day": "Sunday, 17th August 2025",
+    "timing": "9:30 AM to 6:00 PM",
+    "description": "Students compose an original 15-line piece blending a short story, monologue, and poem based on a given prompt.",
+    "rules": [
+      "Use the same prompt (word, phrase, or image).",
+      "Output must blend 3 genres clearly in 15 lines.",
+      "Entries must have a title.",
+      "Judged on structure, genre clarity, and creativity.",
+      "Submit individual handwritten piece on-site."
+    ],
+    "prizes": [
+      "Top 3 Writers",
+      "Critic’s Choice Award",
+      "Top Three Delegations"
+    ]
+  },
+  "sensorium": {
+    "event_name": "Sensorium",
+    "class_range": "8–12",
+    "rounds": 1,
+    "format": "Prop-based Multisensory Prompt Interpretation",
+    "day": "Monday, 18th August 2025",
+    "timing": "9:30 AM to 12:30 PM",
+    "description": "Participants will interpret a multisensory prompt using creative expression across any format — from movement to mime to spoken word.",
+    "rules": [
+      "Prompt will involve at least 3 sensory inputs (sound, smell, touch, visuals).",
+      "Only 1 performer from each team; no costume changes.",
+      "Time limit: 2.5 minutes max.",
+      "No pre-recorded music allowed; live sounds encouraged.",
+      "Presentation must reflect the theme's emotional/creative depth."
+    ],
+    "prizes": [
+      "Top 3 Performers",
+      "Critic’s Choice Award"
+    ]
+  },
+  "quest": {
+    "event_name": "QUEST",
+    "class_range": "8–12",
+    "rounds": 2,
+    "format": "Interdisciplinary Quiz",
+    "day": "Monday, 18th August 2025",
+    "timing": "1:30 PM to 4:30 PM",
+    "description": "A live multimedia quiz testing general awareness, logic, lateral thinking, and observation skills through written prelims and live finals.",
+    "rules": [
+      "Teams of 2 students; class-mix allowed.",
+      "Written round determines 6 finalists.",
+      "Quiz includes audio-visual and rapid fire rounds.",
+      "No mobile phones allowed during the event.",
+      "Audience interaction rounds may be included."
+    ],
+    "prizes": [
+      "Top 3 Teams",
+      "Best Individual Quizzer"
+    ]
+  },
+  "crossconnect": {
+    "event_name": "CrossConnect",
+    "class_range": "8–12",
+    "rounds": 1,
+    "format": "Subject Integration Challenge",
+    "day": "Tuesday, 19th August 2025",
+    "timing": "9:30 AM to 11:30 AM",
+    "description": "Teams must present a 5-minute concept pitch integrating two or more academic disciplines using real-world problems or stories.",
+    "rules": [
+      "Team of 2 students from different subject backgrounds.",
+      "Presentation must include visuals (can be digital or handmade).",
+      "No reading from scripts allowed.",
+      "Focus on originality, clarity, and interdisciplinary depth.",
+      "No internet-connected devices allowed during the event."
+    ],
+    "prizes": [
+      "Top 3 Teams",
+      "Innovation Award"
+    ]
+  },
+  "biblioquest": {
+    "event_name": "BiblioQuest",
+    "class_range": "8–12",
+    "rounds": 1,
+    "format": "Library-Themed Treasure Hunt",
+    "day": "Tuesday, 19th August 2025",
+    "timing": "11:45 AM to 1:00 PM",
+    "description": "Participants follow clues, solve puzzles, and navigate research-based tasks across books, catalogues, and archive materials.",
+    "rules": [
+      "Team of 3 students.",
+      "No mobile devices allowed.",
+      "Use of library catalogue and index encouraged.",
+      "All answers must be written down and submitted on time.",
+      "Focus on speed, accuracy, and decoding ability."
+    ],
+    "prizes": [
+      "Top 3 Teams",
+      "Speed & Strategy Award"
+    ]
+  },
+  "newstrack": {
+    "event_name": "Newstrack",
+    "class_range": "8–12",
+    "rounds": 1,
+    "format": "Investigative Reporting Presentation",
+    "day": "Tuesday, 19th August 2025",
+    "timing": "11:45 AM to 1:00 PM",
+    "description": "Teams present an investigative report (real or imagined) including background, facts, interviews, and possible solutions.",
+    "rules": [
+      "Teams of 2 students.",
+      "One student anchors the presentation; the other plays a reporter/interviewee.",
+      "Use of visual props or slides allowed but not mandatory.",
+      "Presentations must be under 4 minutes.",
+      "Judged on clarity, impact, and journalistic depth."
+    ],
+    "prizes": [
+      "Top 3 Teams",
+      "Best Reporter Award"
+    ]
+  },
+  "visualvocabulary": {
+    "event_name": "Visual Vocabulary",
+    "class_range": "6–8",
+    "rounds": 1,
+    "format": "Vocabulary Word Collage Poster",
+    "day": "Tuesday, 19th August 2025",
+    "timing": "9:30 AM to 11:30 AM",
+    "description": "Students create a visual collage illustrating 3 selected vocabulary words with pictures, cutouts, drawings, and captions.",
+    "rules": [
+      "Individual event.",
+      "A3 sheet to be provided; only dry materials allowed.",
+      "Each word must have a heading, image, and 1-line caption.",
+      "Words should be level-appropriate and creatively presented.",
+      "No digital elements allowed."
+    ],
+    "prizes": [
+      "Top 3 Posters",
+      "Creativity Award"
+    ]
+  },
+  "unreimagined": {
+    "event_name": "United Nations Reimagined",
+    "class_range": "9–12",
+    "rounds": 1,
+    "format": "Diplomatic Simulation",
+    "day": "Tuesday, 19th August 2025",
+    "timing": "1:30 PM to 4:30 PM",
+    "description": "Participants represent countries in a reimagined UN setup to address modern global crises through policy presentation and debate.",
+    "rules": [
+      "Each team represents one country.",
+      "Delegates must propose resolutions to a crisis revealed on the day.",
+      "Spoken and written communication will be assessed.",
+      "Judged on diplomacy, collaboration, and realism of policy.",
+      "No props or costumes allowed."
+    ],
+    "prizes": [
+      "Best Delegation",
+      "Best Policy Draft",
+      "Diplomatic Impact Award"
+    ]
+}
+
+  
+}

@@ -1,0 +1,81 @@
+{
+  "locations": {
+    "9th A": "Room 1, Block-A Ground Floor",
+    "9th B": "Room 12, Block-A Ground Floor",
+    "9th C": "Room 4, Block-A Ground Floor",
+    "9th D": "Room 5, Block-A Ground Floor",
+    "10th A": "Room 105, Block-A1 First Floor",
+    "10th B": "Room 106, Block-A1 First Floor",
+    "10th C": "Room 229, Block-A2 Second Floor",
+    "10th D": "Room 228, Block-A2 Second Floor",
+    "11th": "Room N-45, NX Building Third Floor",
+    "12th": "Room N-46, NX Building Third Floor",
+    "Chemistry Lab": "Room N-7, NX Building Ground Floor",
+    "Physics Lab": "Room N-22, NX Building Second Floor",
+    "Biolab": "Room N-8, NX Building Ground Floor",
+    "Maths Lab": "Room 104, Block-A1 First Floor",
+    "Art & Craft 1": "Rooms 110, 111, Block-A1 First Floor",
+    "Art & Craft 2": "Room 233, Block-A2 Second Floor",
+    "Yoga Room 1": "Room 105 E, Block-A1 First Floor",
+    "Yoga Room 2": "Room N-44, NX Building Second Floor",
+    "Design Lab 1": "Room 211, Block-D2 Second Floor",
+    "Design Lab 2": "Room N-53, NX Building Third Floor",
+    "Library": "Rooms 113 & 114, Block-B1 and Room N-37, NX Building",
+    "Music Room 1": "Room 115, Block-B1",
+    "Music Room 2": "Room 223, Block-B2",
+    "MPH": "Rooms 224 A & B, Block-B2",
+    "Indoor Games": "Room 224, Block-B1",
+    "AV Room": "Room 10, Block-A Ground Floor",
+    "Amphitheatre": "Block-A Ground Floor",
+    "Triveni Hall": "Room 32, Block-D Ground Floor",
+    "Medical Room 1": "Room 20, Block-C Ground Floor",
+    "Medical Room 2": "Room N-27, NX Building Second Floor"
+  },
+  "infrastructure": {
+    "IT enabled classrooms": "49 ventilated classrooms with digital setup",
+    "IT Labs": "2 labs teaching hardcore programming",
+    "Science Labs": "5 labs for Chemistry, Physics, Biology",
+    "Geography Lab": "1 modern geography lab",
+    "Language Lab": "1 language lab for practice",
+    "Maths Lab": "1 maths lab",
+    "Library": "1 vast library with rich books collection",
+    "AV Room": "1 audio-visual room for presentations",
+    "Activity Hall": "Vibrant activity hall for events",
+    "Sports Facilities": "Indoor & outdoor games including football, skating, chess, badminton etc.",
+    "Amphitheatre": "Open-air venue for assemblies and functions",
+    "Resource Room": "1 room for staff lesson planning & Teach‑Next content",
+    "Kids Pool & Play Pen": "Facilities for pre-primary fine motor skills",
+    "Activity Rooms": "7 rooms for yoga, dance, art, music"
+  },
+  "co_curricular": {
+    "Yoga": "Regular yoga sessions offered",
+    "Martial Arts": "TAE and martial arts training",
+    "Music": "Classical & contemporary music classes",
+    "Art & Craft": "Creative art and craft workshops",
+    "Dance": "Classical & modern dance forms",
+    "Games": "Indoor & outdoor sports including skating, chess, table tennis",
+    "Clubs": "Math club, Science club, Nature club, Drama, Reading, Katha, Health & Wellness"
+  },
+  "mission_vision": {
+    "vision": "To produce self‑motivated lifelong learners who will be dynamic and proactive leaders.",
+    "mission": "Provide best opportunities in a safe, inclusive environment; continual improvement in tech, curriculum & human resources.",
+    "core_values": [
+      "Belief in lifelong learning & holistic approach",
+      "Innovation and continual excellence",
+      "Respect & recognition of workforce",
+      "Leadership with sustainability goals",
+      "Adaptive learning ambience"
+    ]
+  },
+  "staff": {
+    "principal": "Mrs. Ranjana Jangra",
+    "teaching_staff_overview": "More than 100 passionate and dynamic teachers committed to quality education.",
+    "key_faculty_members": [
+      "Mrs. Ranjna Jangra – Principal",
+      "Mrs. Ruchita Chauhan – Vice Principal",
+      "Mrs. Shahila Chandrashekar – Assistant Vice Principal",
+      "Mrs. Kirti Saini – Co-ordinator"
+    ],
+    "facilities_for_teacher_training": "Regular staff training and workshops are conducted to keep teaching methodologies updated."
+  }
+}

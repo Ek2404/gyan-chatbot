@@ -1,0 +1,111 @@
+:root {
+  --bg: #0b1622;
+  --fg: #e3f2fd;
+  --accent: #00e5ff;
+  --accent-dim: rgba(0, 229, 255, 0.15);
+  --user: #1e88e5;
+  --jarvis: #00e5ff;
+  --radius: 14px;
+  --font: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+* { box-sizing: border-box; }
+html, body { height: 100%; margin: 0; background: var(--bg); color: var(--fg); font-family: var(--font); }
+
+.container {
+  max-width: 780px;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 24px 16px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 12px;
+}
+h1 {
+  margin: 0;
+  letter-spacing: 2px;
+  color: var(--accent);
+}
+.tag {
+  margin: 6px 0 0;
+  color: #90caf9;
+  font-size: 0.9rem;
+}
+
+#chat {
+  flex: 1;
+  overflow-y: auto;
+  background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(255,255,255,0.05);
+  border-radius: var(--radius);
+  padding: 16px;
+}
+
+.msg {
+  margin-bottom: 14px;
+  padding: 12px 14px;
+  border-radius: var(--radius);
+  max-width: 90%;
+  line-height: 1.4;
+  animation: fadeIn 0.15s ease;
+}
+.msg .who {
+  display: block;
+  font-size: 0.75rem;
+  opacity: 0.7;
+  margin-bottom: 4px;
+}
+.msg.user {
+  background: rgba(30,136,229,0.1);
+  border-left: 3px solid var(--user);
+  margin-left: auto;
+}
+.msg.jarvis {
+  background: var(--accent-dim);
+  border-left: 3px solid var(--jarvis);
+}
+.msg.typing p { opacity: 0.4; font-style: italic; }
+
+form {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+input[type="text"] {
+  flex: 1;
+  padding: 12px 14px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  color: var(--fg);
+  border-radius: var(--radius);
+  outline: none;
+}
+button {
+  padding: 0 18px;
+  border: none;
+  background: var(--accent);
+  color: #001219;
+  font-weight: 600;
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+button:hover { filter: brightness(1.1); }
+
+.toggles {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+@keyframes fadeIn {
+  from { opacity:0; transform: translateY(2px); }
+  to { opacity:1; transform: translateY(0); }
+}
+
+.bot-msg, .msg.jarvis p {
+  white-space: pre-wrap;
+}
