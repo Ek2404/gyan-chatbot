@@ -6,10 +6,6 @@ import os
 
 app = Flask(__name__)
 
-if __name__ == '__main__':
-    port = int(os.environ.get("PORT", 5000))
-    app.run(host='0.0.0.0', port=port)
-
 @app.route('/')
 def home():
     return render_template('index.html')
@@ -38,6 +34,10 @@ def ask():
         return jsonify({"answer": conclave_info})
 
     # ✅ 3. Fallback to AI
-    ai_answer = get_response(user_query)
-    print("🤖 Answered using OpenRouter AI")
-    return jsonify({"answer": ai_answer})
+        ai_answer = get_response(user_query)
+        print("🤖 Answered using OpenRouter AI")
+        return jsonify({"answer": ai_answer})
+    
+    if __name__ == '__main__':
+        port = int(os.environ.get("PORT", 5000))
+        app.run(host='0.0.0.0', port=port)
