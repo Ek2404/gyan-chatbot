@@ -4,70 +4,58 @@ import json
 try:
     with open("conclave_data.json", "r", encoding="utf-8") as file:
         conclave_data = json.load(file)
-    print("✅ Conclave data loaded successfully")
 except Exception as e:
     conclave_data = {}
     print(f"❌ Error loading Conclave JSON: {e}")
 
 
 def answer_conclave_query(query: str):
-    """Answer queries related to Conclave events"""
     query = query.lower().strip()
     print(f"🎤 Conclave query: '{query}'")
 
-    # Keyword groups
+    # Define keyword groups
     keywords = {
         "rules": ["rules", "instructions", "regulations", "guidelines"],
         "prizes": ["prizes", "awards", "recognition", "winner", "reward"],
-        "timing": ["time", "date", "schedule", "when", "timing", "duration"],
-        "venue": ["venue", "location", "place", "hall"],
+        "timing": ["time", "date", "schedule", "when", "timing", "duration", "its timing", "when is it"],
+        "venue": ["venue", "location", "place", "hall", "where"],
         "format": ["format", "structure", "rounds", "how", "process"],
         "description": ["description", "what is", "summary", "details", "about", "tell me"],
-        "participants": ["who", "participants", "eligibility", "classes", "students"],
+        "participants": ["who", "participants", "eligibility", "classes", "students", "can participate"],
         "registration": ["registration", "register", "deadline", "apply", "entry"]
     }
 
-    # --- STEP 1: Try to find a matching event ---
+    # 🔍 Step 1: Try to find event match
     matched_event = None
     for key, data in conclave_data.items():
         event_name = data.get("event_name", "").lower()
-
         if key.lower() in query or event_name in query:
             matched_event = data
-            print(f"🎯 Matched event: {event_name}")
             break
 
-    # If no direct match → fuzzy word matching
+    # Step 2: Context-based matching if no direct match
     if not matched_event:
         query_words = query.split()
         for key, data in conclave_data.items():
             event_name = data.get("event_name", "").lower()
             event_words = event_name.split()
             key_words = key.split()
-
             for word in query_words:
-                if len(word) > 2:  # avoid matching short words
+                if len(word) > 2:
                     if word in event_words or word in key_words:
                         matched_event = data
-                        print(f"🎯 Context match found: {event_name} via '{word}'")
                         break
             if matched_event:
                 break
 
-    # --- STEP 2: Return the requested section ---
+    # Step 3: Return info if event matched
     if matched_event:
         for section, triggers in keywords.items():
             if any(word in query for word in triggers):
-                result = format_specific_section(matched_event, section)
-                if result:
-                    print(f"✅ Returning {section} for {matched_event['event_name']}")
-                    return result
+                return format_specific_section(matched_event, section)
+        return format_full_summary(matched_event)  # default summary
 
-        # Default → full summary
-        return format_full_summary(matched_event)
-
-    # --- STEP 3: No match found ---
-    print("❌ No matching event found for query")
+    # Step 4: No match found
     return None
 
 
@@ -84,7 +72,6 @@ def format_specific_section(data, section: str):
         return f"📅 {data['event_name']} is scheduled on {data['day']} at {data['timing']} (Duration: {duration})."
 
     elif section == "venue":
-        # 🔑 Try multiple possible keys
         venue = (
             data.get("venue")
             or data.get("location")
