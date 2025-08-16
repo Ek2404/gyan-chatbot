@@ -1,5 +1,6 @@
 import json
 import os
+import difflib
 
 # Load school + conclave data
 def get_school_info(query):
@@ -111,11 +112,12 @@ def get_school_info(query):
         # -----------------------------
         # 2. Conclave Events Section
         # -----------------------------
-        import difflib
         event_keys = list(conclave_data.keys())
         event_names = [event_data["event_name"] for event_data in conclave_data.values()]
-        # Try direct/normalized match first
+
         matched_event = None
+
+        # Direct/normalized match
         for event_key, event_data in conclave_data.items():
             if (
                 event_key.lower() in query_lower
@@ -125,30 +127,23 @@ def get_school_info(query):
             ):
                 matched_event = event_data
                 break
-        # Fuzzy match if no direct match
+
+        # Fuzzy match (only if user likely meant an event)
         if not matched_event:
             all_names = event_keys + event_names
-            close_matches = difflib.get_close_matches(query, all_names, n=1, cutoff=0.5)
+            close_matches = difflib.get_close_matches(query, all_names, n=1, cutoff=0.7)
             if close_matches:
-                # Find the event_data for the match
                 for event_key, event_data in conclave_data.items():
-                    if close_matches[0].lower() == event_key.lower() or close_matches[0].lower() == event_data["event_name"].lower():
+                    if (
+                        close_matches[0].lower() == event_key.lower()
+                        or close_matches[0].lower() == event_data["event_name"].lower()
+                    ):
                         matched_event = event_data
                         break
-        # Fallback: suggest event names if still no match
-        if not matched_event:
-            suggestion = ", ".join(event_names[:8]) + ("..." if len(event_names) > 8 else "")
-            return f"Sorry, I couldn't find that event. Try one of these: {suggestion}"
-        # If matched, process keywords
+
         if matched_event:
             # Venue/location/where queries
-            if (
-                "venue" in query_lower
-                or "location" in query_lower
-                or "where" in query_lower
-                or "place" in query_lower
-                or "hall" in query_lower
-            ):
+            if any(word in query_lower for word in ["venue", "location", "where", "place", "hall"]):
                 venue = (
                     matched_event.get("venue")
                     or matched_event.get("location")
@@ -157,20 +152,19 @@ def get_school_info(query):
                     or "Venue details not available."
                 )
                 return f"Venue for {matched_event['event_name']}: {venue}"
+
             # Timing
-            elif (
-                "time" in query_lower
-                or "timing" in query_lower
-                or "schedule" in query_lower
-                or "when" in query_lower
-            ):
+            elif any(word in query_lower for word in ["time", "timing", "schedule", "when"]):
                 return f"{matched_event['event_name']} will be held on {matched_event['day']} at {matched_event['timing']} in {matched_event['venue']}."
+
             # Rules
             elif "rule" in query_lower:
                 return f"Rules for {matched_event['event_name']}: " + "; ".join(matched_event["rules"])
+
             # Prizes
-            elif "prize" in query_lower or "award" in query_lower:
+            elif any(word in query_lower for word in ["prize", "award"]):
                 return f"Prizes for {matched_event['event_name']}: " + ", ".join(matched_event["prizes"])
+
             # General info
             else:
                 venue = matched_event.get("venue")
@@ -180,9 +174,9 @@ def get_school_info(query):
                     return f"{matched_event['event_name']} ({matched_event['class_range']}): {matched_event['description']}"
 
         # -----------------------------
-        # 3. No match
+        # 3. No match → let APU handle
         # -----------------------------
-        print("❌ No school/conclave match found")
+        print("❌ No school/conclave match found → fallback to APU")
         return None
 
     except Exception as e:
