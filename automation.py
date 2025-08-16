@@ -1,70 +1,88 @@
 import json
 import os
-import re
 
-# Load school data
+# Load school + conclave data
 def get_school_info(query):
     try:
-        with open(os.path.join(os.path.dirname(__file__), "school_data.json"), encoding="utf-8") as f:
-            data = json.load(f)
-        
-        query_lower = query.lower().strip()
-        print(f"📚 School info query: '{query}'")
+        base_path = os.path.dirname(__file__)
 
-        # --- Helper normalize function ---
-        def normalize(text):
-            return re.sub(r'[^a-z0-9 ]', '', text.lower().strip())
+        # Load school data
+        with open(os.path.join(base_path, "school_data.json")) as f:
+            school_data = json.load(f)
 
-        query_norm = normalize(query)
+        # Load conclave data
+        with open(os.path.join(base_path, "conclave_data.json")) as f:
+            conclave_data = json.load(f)
 
-        # --- Function to check fuzzy match ---
-        def fuzzy_match(key, query):
-            key_norm = normalize(key)
-            return key_norm in query or query in key_norm
+        query_lower = query.lower()
+        print(f"📚 School/Conclave query: '{query}'")
 
-        # 1. Match location
-        for key, value in data.get("locations", {}).items():
-            if fuzzy_match(key, query_norm):
-                print(f"✅ Found location match: {key}")
-                return f"The location of {key} is {value}."
+        # -----------------------------
+        # 1. School Info Section
+        # -----------------------------
+        # Match location
+        for key, value in school_data.get("locations", {}).items():
+            if key.lower() in query_lower or query_lower in key.lower():
+                return f"The location of {key} is as follows: {value}."
 
-        # 2. Match infrastructure
-        for key, value in data.get("infrastructure", {}).items():
-            if fuzzy_match(key, query_norm):
-                print(f"✅ Found infrastructure match: {key}")
+        # Infrastructure
+        for key, value in school_data.get("infrastructure", {}).items():
+            if key.lower() in query_lower:
                 return f"{key}: {value}"
 
-        # 3. Match co-curricular
-        for key, value in data.get("co_curricular", {}).items():
-            if fuzzy_match(key, query_norm):
-                print(f"✅ Found co-curricular match: {key}")
-                return f"{key}: {value}"
+        # Co-curricular
+        for key, value in school_data.get("co_curricular", {}).items():
+            if key.lower() in query_lower:
+                return f"{key} activity: {value}"
 
-        # 4. Match mission & vision
-        mv = data.get("mission_vision", {})
-        if "vision" in query_norm:
-            print("✅ Found vision match")
+        # Mission & Vision
+        mv = school_data.get("mission_vision", {})
+        if "vision" in query_lower:
             return f"Our vision: {mv.get('vision')}"
-        elif "mission" in query_norm:
-            print("✅ Found mission match")
+        elif "mission" in query_lower:
             return f"Our mission: {mv.get('mission')}"
-        elif "core values" in query_norm or "values" in query_norm:
-            print("✅ Found core values match")
+        elif "core values" in query_lower or "values" in query_lower:
             return "Our core values include: " + ", ".join(mv.get("core_values", []))
 
-        # 5. Match staff queries (FULLY FLEXIBLE 🚀)
-        staff = data.get("staff", {})
-        for key, value in staff.items():
-            if isinstance(value, (str, list)):
-                if fuzzy_match(key, query_norm):
-                    print(f"✅ Found staff match: {key}")
-                    if isinstance(value, list):
-                        return f"{key.title()}: {', '.join(value)}"
-                    return f"{key.title()}: {value}"
+        # Staff queries
+        staff = school_data.get("staff", {})
+        if "principal" in query_lower:
+            return f"The principal is {staff.get('principal')}"
+        elif "teachers" in query_lower or "staff" in query_lower:
+            return staff.get("teaching_staff_overview", "")
+        elif "senior teacher" in query_lower or "faculty" in query_lower:
+            return "Key faculty members include: " + ", ".join(staff.get("key_faculty_members", []))
+        elif "teacher training" in query_lower:
+            return staff.get("facilities_for_teacher_training", "")
 
-        print("❌ No school info match found")
+        # -----------------------------
+        # 2. Conclave Events Section
+        # -----------------------------
+        for event_key, event_data in conclave_data.items():
+            # Match event name
+            if event_key.lower() in query_lower or event_data["event_name"].lower() in query_lower:
+                # If user asked about timing
+                if "time" in query_lower or "timing" in query_lower or "schedule" in query_lower:
+                    return f"{event_data['event_name']} will be held on {event_data['day']} at {event_data['timing']} in {event_data['venue']}."
+
+                # If user asked about rules
+                elif "rule" in query_lower:
+                    return f"Rules for {event_data['event_name']}: " + "; ".join(event_data["rules"])
+
+                # If user asked about prizes
+                elif "prize" in query_lower or "award" in query_lower:
+                    return f"Prizes for {event_data['event_name']}: " + ", ".join(event_data["prizes"])
+
+                # Otherwise general info
+                else:
+                    return f"{event_data['event_name']} ({event_data['class_range']}): {event_data['description']}"
+
+        # -----------------------------
+        # 3. No match
+        # -----------------------------
+        print("❌ No school/conclave match found")
         return None
 
     except Exception as e:
-        print("Error loading school data:", e)
+        print("Error loading data:", e)
         return None
