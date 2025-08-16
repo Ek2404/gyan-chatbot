@@ -17,21 +17,26 @@ def get_school_info(query):
 
         query_norm = normalize(query)
 
+        # --- Function to check fuzzy match ---
+        def fuzzy_match(key, query):
+            key_norm = normalize(key)
+            return key_norm in query or query in key_norm
+
         # 1. Match location
         for key, value in data.get("locations", {}).items():
-            if normalize(key) in query_norm:
+            if fuzzy_match(key, query_norm):
                 print(f"✅ Found location match: {key}")
                 return f"The location of {key} is {value}."
 
         # 2. Match infrastructure
         for key, value in data.get("infrastructure", {}).items():
-            if normalize(key) in query_norm:
+            if fuzzy_match(key, query_norm):
                 print(f"✅ Found infrastructure match: {key}")
                 return f"{key}: {value}"
 
         # 3. Match co-curricular
         for key, value in data.get("co_curricular", {}).items():
-            if normalize(key) in query_norm:
+            if fuzzy_match(key, query_norm):
                 print(f"✅ Found co-curricular match: {key}")
                 return f"{key}: {value}"
 
@@ -47,11 +52,11 @@ def get_school_info(query):
             print("✅ Found core values match")
             return "Our core values include: " + ", ".join(mv.get("core_values", []))
 
-        # 5. Match staff queries (FULLY GENERIC NOW 🚀)
+        # 5. Match staff queries (FULLY FLEXIBLE 🚀)
         staff = data.get("staff", {})
         for key, value in staff.items():
-            if isinstance(value, (str, list)):  # ignore nested dicts
-                if normalize(key) in query_norm:
+            if isinstance(value, (str, list)):
+                if fuzzy_match(key, query_norm):
                     print(f"✅ Found staff match: {key}")
                     if isinstance(value, list):
                         return f"{key.title()}: {', '.join(value)}"
