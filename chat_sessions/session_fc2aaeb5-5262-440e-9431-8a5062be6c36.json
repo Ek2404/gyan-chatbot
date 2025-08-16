@@ -1,0 +1,28 @@
+{
+  "session_id": "fc2aaeb5-5262-440e-9431-8a5062be6c36",
+  "created_at": "2025-08-16T14:24:03.921217",
+  "last_updated": "2025-08-16T14:24:03.921220",
+  "message_count": 4,
+  "messages": [
+    {
+      "role": "user",
+      "content": "visual vocabulary",
+      "timestamp": "2025-08-16T14:24:01.864328"
+    },
+    {
+      "role": "assistant",
+      "content": "📌 Visual Vocabulary (Classes 6–8)\n🗓️ Tuesday, 19th August 2025 | ⏰ 9:30 AM to 11:30 AM\n🎯 Format: Vocabulary Word Collage Poster\n\nℹ️ Students create a visual collage illustrating 3 selected vocabulary words with pictures, cutouts, drawings, and captions.\n\n📖 Sample Rules:\n• Individual event.\n• A3 sheet to be provided; only dry materials allowed.\n• Each word must have a heading, image, and 1-line caption.\n...\n\n🏆 Awards: Top 3 Posters, Creativity Award...",
+      "timestamp": "2025-08-16T14:24:01.871932"
+    },
+    {
+      "role": "user",
+      "content": "who can participate?",
+      "timestamp": "2025-08-16T14:24:03.914128"
+    },
+    {
+      "role": "assistant",
+      "content": "Sorry, AI service is not configured. Please set OPENROUTER_API_KEY environment variable.",
+      "timestamp": "2025-08-16T14:24:03.921201"
+    }
+  ]
+}

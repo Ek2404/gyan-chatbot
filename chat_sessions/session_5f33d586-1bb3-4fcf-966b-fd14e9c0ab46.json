@@ -1,0 +1,28 @@
+{
+  "session_id": "5f33d586-1bb3-4fcf-966b-fd14e9c0ab46",
+  "created_at": "2025-08-16T14:29:50.117977",
+  "last_updated": "2025-08-16T14:29:50.117979",
+  "message_count": 4,
+  "messages": [
+    {
+      "role": "user",
+      "content": "continuum",
+      "timestamp": "2025-08-16T14:29:48.035655"
+    },
+    {
+      "role": "assistant",
+      "content": "📌 Continuum (Classes 8–12)\n🗓️ Sunday, 17th August 2025 | ⏰ 9:30 AM to 6:00 PM\n🎯 Format: Live Dialogue with Painting\n\nℹ️ An interdisciplinary event where participants present a dialogue about Picasso’s Guernica while creating live paintings.\n\n📖 Sample Rules:\n• Two members speak on Guernica; all three paint simultaneously.\n• Only wax crayons and markers allowed.\n• No costumes or props except 2 hats, 2 empty frames, 2 umbrellas.\n...\n\n🏆 Awards: Top 3 Teams, Critic’s Choice Award...",
+      "timestamp": "2025-08-16T14:29:48.049971"
+    },
+    {
+      "role": "user",
+      "content": "what are the rules?",
+      "timestamp": "2025-08-16T14:29:50.098599"
+    },
+    {
+      "role": "assistant",
+      "content": "Sorry, AI service is not configured. Please set OPENROUTER_API_KEY environment variable.",
+      "timestamp": "2025-08-16T14:29:50.117961"
+    }
+  ]
+}

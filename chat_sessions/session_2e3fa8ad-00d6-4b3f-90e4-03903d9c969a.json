@@ -1,0 +1,38 @@
+{
+  "session_id": "2e3fa8ad-00d6-4b3f-90e4-03903d9c969a",
+  "created_at": "2025-08-16T14:30:11.146102",
+  "last_updated": "2025-08-16T14:30:11.146105",
+  "message_count": 6,
+  "messages": [
+    {
+      "role": "user",
+      "content": "plurilogues",
+      "timestamp": "2025-08-16T14:30:07.015701"
+    },
+    {
+      "role": "assistant",
+      "content": "📌 Plurilogues (Classes 8–12)\n🗓️ Sunday, 17th August 2025 | ⏰ 9:30 AM to 6:00 PM\n🎯 Format: Tag Extempore + Face-off Finals\n\nℹ️ A multi-format English debate consisting of an extempore round followed by a face-off final between selected teams.\n\n📖 Sample Rules:\n• Each team will receive a word/phrase/term 10 minutes before the start.\n• Speaker 1 delivers a 1.5-minute extempore speech.\n• Speaker 2 immediately continues for another 1.5 minutes.\n...\n\n🏆 Awards: Top 5 speakers recognized and awarded, Best Speakers (Prelims, Semi-finals, Finals)...",
+      "timestamp": "2025-08-16T14:30:07.026080"
+    },
+    {
+      "role": "user",
+      "content": "when is it?",
+      "timestamp": "2025-08-16T14:30:09.080354"
+    },
+    {
+      "role": "assistant",
+      "content": "📅 Plurilogues is scheduled on Sunday, 17th August 2025 at 9:30 AM to 6:00 PM.",
+      "timestamp": "2025-08-16T14:30:09.093254"
+    },
+    {
+      "role": "user",
+      "content": "what are the rules?",
+      "timestamp": "2025-08-16T14:30:11.129601"
+    },
+    {
+      "role": "assistant",
+      "content": "Sorry, AI service is not configured. Please set OPENROUTER_API_KEY environment variable.",
+      "timestamp": "2025-08-16T14:30:11.146079"
+    }
+  ]
+}

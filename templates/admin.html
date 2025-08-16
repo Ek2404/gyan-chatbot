@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Session Manager</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .session-card {
+            border: 1px solid #ddd;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+            background: #fafafa;
+        }
+        .session-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .session-id {
+            font-family: monospace;
+            background: #e0e0e0;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-size: 12px;
+        }
+        .session-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+            margin: 10px 0;
+        }
+        .info-item {
+            background: white;
+            padding: 8px;
+            border-radius: 3px;
+            border: 1px solid #eee;
+        }
+        .info-label {
+            font-weight: bold;
+            color: #666;
+            font-size: 12px;
+        }
+        .info-value {
+            color: #333;
+            margin-top: 2px;
+        }
+        .actions {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .btn {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .btn-primary {
+            background: #007bff;
+            color: white;
+        }
+        .btn-danger {
+            background: #dc3545;
+            color: white;
+        }
+        .btn:hover {
+            opacity: 0.8;
+        }
+        .chat-history {
+            max-height: 300px;
+            overflow-y: auto;
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            padding: 10px;
+            margin-top: 10px;
+        }
+        .message {
+            margin: 5px 0;
+            padding: 8px;
+            border-radius: 3px;
+        }
+        .message.user {
+            background: #e3f2fd;
+            border-left: 3px solid #2196f3;
+        }
+        .message.assistant {
+            background: #f3e5f5;
+            border-left: 3px solid #9c27b0;
+        }
+        .message .timestamp {
+            font-size: 11px;
+            color: #666;
+            margin-top: 2px;
+        }
+        .stats {
+            background: #e8f5e8;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .refresh-btn {
+            background: #28a745;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        .refresh-btn:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>💬 Chat Session Manager</h1>
+        
+        <div class="stats">
+            <h3>📊 Session Statistics</h3>
+            <p>Total Sessions: <span id="totalSessions">-</span> | 
+               Total Messages: <span id="totalMessages">-</span></p>
+        </div>
+        
+        <button class="refresh-btn" onclick="loadSessions()">🔄 Refresh Sessions</button>
+        
+        <div id="sessionsList">
+            <p>Loading sessions...</p>
+        </div>
+    </div>
+
+    <script>
+        async function loadSessions() {
+            try {
+                const response = await fetch('/sessions');
+                const data = await response.json();
+                
+                if (data.error) {
+                    throw new Error(data.error);
+                }
+                
+                displaySessions(data.sessions);
+                updateStats(data.sessions);
+                
+            } catch (error) {
+                console.error('Error loading sessions:', error);
+                document.getElementById('sessionsList').innerHTML = 
+                    `<p style="color: red;">Error loading sessions: ${error.message}</p>`;
+            }
+        }
+        
+        function displaySessions(sessions) {
+            const container = document.getElementById('sessionsList');
+            
+            if (sessions.length === 0) {
+                container.innerHTML = '<p>No chat sessions found.</p>';
+                return;
+            }
+            
+            const sessionsHTML = sessions.map(session => `
+                <div class="session-card">
+                    <div class="session-header">
+                        <span class="session-id">${session.session_id}</span>
+                        <div class="actions">
+                            <button class="btn btn-primary" onclick="viewHistory('${session.session_id}')">
+                                📖 View History
+                            </button>
+                            <button class="btn btn-danger" onclick="clearSession('${session.session_id}')">
+                                🗑️ Clear
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="session-info">
+                        <div class="info-item">
+                            <div class="info-label">Created</div>
+                            <div class="info-value">${formatDate(session.created_at)}</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Last Updated</div>
+                            <div class="info-value">${formatDate(session.last_updated)}</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Messages</div>
+                            <div class="info-value">${session.message_count}</div>
+                        </div>
+                        ${session.note ? `<div class="info-item">
+                            <div class="info-label">Note</div>
+                            <div class="info-value">${session.note}</div>
+                        </div>` : ''}
+                    </div>
+                    
+                    <div id="history-${session.session_id}" class="chat-history" style="display: none;"></div>
+                </div>
+            `).join('');
+            
+            container.innerHTML = sessionsHTML;
+        }
+        
+        function updateStats(sessions) {
+            const totalSessions = sessions.length;
+            const totalMessages = sessions.reduce((sum, session) => sum + (session.message_count || 0), 0);
+            
+            document.getElementById('totalSessions').textContent = totalSessions;
+            document.getElementById('totalMessages').textContent = totalMessages;
+        }
+        
+        async function viewHistory(sessionId) {
+            const historyDiv = document.getElementById(`history-${sessionId}`);
+            
+            if (historyDiv.style.display === 'none') {
+                try {
+                    const response = await fetch(`/chat-history/${sessionId}`);
+                    const data = await response.json();
+                    
+                    if (data.error) {
+                        throw new Error(data.error);
+                    }
+                    
+                    const messagesHTML = data.messages.map(message => `
+                        <div class="message ${message.role}">
+                            <strong>${message.role === 'user' ? '👤 User' : '🤖 Assistant'}:</strong>
+                            <div>${message.content}</div>
+                            ${message.timestamp ? `<div class="timestamp">${formatDate(message.timestamp)}</div>` : ''}
+                        </div>
+                    `).join('');
+                    
+                    historyDiv.innerHTML = messagesHTML;
+                    historyDiv.style.display = 'block';
+                    
+                } catch (error) {
+                    console.error('Error loading history:', error);
+                    historyDiv.innerHTML = `<p style="color: red;">Error loading history: ${error.message}</p>`;
+                    historyDiv.style.display = 'block';
+                }
+            } else {
+                historyDiv.style.display = 'none';
+            }
+        }
+        
+        async function clearSession(sessionId) {
+            if (!confirm(`Are you sure you want to clear session ${sessionId}?`)) {
+                return;
+            }
+            
+            try {
+                const response = await fetch(`/clear-session/${sessionId}`, {
+                    method: 'DELETE'
+                });
+                
+                const data = await response.json();
+                
+                if (data.error) {
+                    throw new Error(data.error);
+                }
+                
+                alert('Session cleared successfully!');
+                loadSessions(); // Refresh the list
+                
+            } catch (error) {
+                console.error('Error clearing session:', error);
+                alert(`Error clearing session: ${error.message}`);
+            }
+        }
+        
+        function formatDate(dateString) {
+            if (!dateString) return 'N/A';
+            
+            try {
+                const date = new Date(dateString);
+                return date.toLocaleString();
+            } catch (error) {
+                return dateString;
+            }
+        }
+        
+        // Load sessions when page loads
+        window.onload = function() {
+            loadSessions();
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+{
+  "session_id": "aa649c93-40ba-4ca9-b2f8-ac0bd7c989d5",
+  "created_at": "2025-08-16T14:06:21.104399",
+  "last_updated": "2025-08-16T14:06:21.104402",
+  "message_count": 2,
+  "messages": [
+    {
+      "role": "user",
+      "content": "its timing?",
+      "timestamp": "2025-08-16T14:06:21.097109"
+    },
+    {
+      "role": "assistant",
+      "content": "I can help you with timing information for specific events or activities. Please ask about a particular event, location, or activity.",
+      "timestamp": "2025-08-16T14:06:21.104374"
+    }
+  ]
+}
