@@ -84,7 +84,14 @@ def format_specific_section(data, section: str):
         return f"📅 {data['event_name']} is scheduled on {data['day']} at {data['timing']} (Duration: {duration})."
 
     elif section == "venue":
-        venue = data.get("venue", "venue details not available")
+        # 🔑 Try multiple possible keys
+        venue = (
+            data.get("venue")
+            or data.get("location")
+            or data.get("place")
+            or data.get("hall")
+            or "venue details not available"
+        )
         return f"📍 Venue for {data['event_name']}: {venue}"
 
     elif section == "format":
@@ -107,10 +114,18 @@ def format_specific_section(data, section: str):
 
 def format_full_summary(data):
     """Default: Return a summary of event"""
+    venue = (
+        data.get("venue")
+        or data.get("location")
+        or data.get("place")
+        or data.get("hall")
+        or "N/A"
+    )
+
     lines = [
         f"📌 {data['event_name']} (Classes {data.get('class_range', 'N/A')})",
         f"🗓️ {data['day']} | ⏰ {data['timing']} | ⏳ Duration: {data.get('duration', 'N/A')}",
-        f"📍 Venue: {data.get('venue', 'N/A')}",
+        f"📍 Venue: {venue}",
         "",
         f"ℹ️ {data.get('description', 'N/A')}",
         "",
