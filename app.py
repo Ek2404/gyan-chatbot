@@ -88,7 +88,7 @@ def get_context_aware_query(session_id: str, user_query: str):
         "prizes", "awards", "rewards", "prize",
         "format", "how", "process", "structure",
         "participants", "who", "eligibility", "classes",
-        "registration", "deadline", "apply"
+        "registration", "deadline", "apply", "venue", "location"
     ]
     
     is_follow_up = any(keyword in user_query.lower() for keyword in follow_up_keywords)
