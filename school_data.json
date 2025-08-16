@@ -68,7 +68,27 @@
     ]
   },
   "staff": {
-    "principal": "Mrs. Ranjana Jangra",
+    "principal": "M rs. Ranjana Jangra",
+    "vice principal": "Mrs. Ruchita Chauhan",
+    "assistant vice principal": "Mrs. Shahila Chandrashekar",
+    "school co-ordinator": "Mrs. Kirti Saini",
+    "outside school incharge": "Mrs. Jyoti Moolya",
+    "events incharge": "Mrs. Jyoti Moolya",
+    "registration incharge": "Mrs. Namrata Karkera",
+    "school captain": "Master Darsh Rathi",
+    "school vice captain": "Miss Devanshi Pandey",
+    "student volunteers": [
+      "Master Darsh Rathi",
+      "Miss Devanshi Pandey"
+    ],
+    "student volunteers email ids": [
+      "darsh.3180@birlaschoolkalyan.com",
+      "devanshi.3212@birlaschoolkalyan.com"
+    ],
+    "chatbot-developer": {
+      "name": "Master Ekansh Garg",
+      "email": "ekanshgarg240410@gmail.com"
+    },
     "teaching_staff_overview": "More than 100 passionate and dynamic teachers committed to quality education.",
     "key_faculty_members": [
       "Mrs. Ranjna Jangra – Principal",
