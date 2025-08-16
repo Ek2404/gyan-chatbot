@@ -1,63 +1,62 @@
 import json
 import os
+import re
 
 # Load school data
 def get_school_info(query):
     try:
-        with open(os.path.join(os.path.dirname(__file__), "school_data.json")) as f:
+        with open(os.path.join(os.path.dirname(__file__), "school_data.json"), encoding="utf-8") as f:
             data = json.load(f)
         
-        query_lower = query.lower()
+        query_lower = query.lower().strip()
         print(f"📚 School info query: '{query}'")
+
+        # --- Helper normalize function ---
+        def normalize(text):
+            return re.sub(r'[^a-z0-9 ]', '', text.lower().strip())
+
+        query_norm = normalize(query)
 
         # 1. Match location
         for key, value in data.get("locations", {}).items():
-            if key.lower() in query_lower or query_lower in key.lower():
+            if normalize(key) in query_norm:
                 print(f"✅ Found location match: {key}")
-                return f"The location of {key} is as follows; {value}."
+                return f"The location of {key} is {value}."
 
         # 2. Match infrastructure
         for key, value in data.get("infrastructure", {}).items():
-            if key.lower() in query_lower:
+            if normalize(key) in query_norm:
                 print(f"✅ Found infrastructure match: {key}")
                 return f"{key}: {value}"
 
         # 3. Match co-curricular
         for key, value in data.get("co_curricular", {}).items():
-            if key.lower() in query_lower:
+            if normalize(key) in query_norm:
                 print(f"✅ Found co-curricular match: {key}")
-                return f"{key} activity: {value}"
+                return f"{key}: {value}"
 
         # 4. Match mission & vision
         mv = data.get("mission_vision", {})
-        if "vision" in query_lower:
+        if "vision" in query_norm:
             print("✅ Found vision match")
             return f"Our vision: {mv.get('vision')}"
-        elif "mission" in query_lower:
+        elif "mission" in query_norm:
             print("✅ Found mission match")
             return f"Our mission: {mv.get('mission')}"
-        elif "core values" in query_lower or "values" in query_lower:
+        elif "core values" in query_norm or "values" in query_norm:
             print("✅ Found core values match")
             return "Our core values include: " + ", ".join(mv.get("core_values", []))
 
-        # 5. Match staff queries
+        # 5. Match staff queries (FULLY GENERIC NOW 🚀)
         staff = data.get("staff", {})
-        if "principal" in query_lower:
-            print("✅ Found principal match")
-            return f"The principal is {staff.get('principal')}"
-        elif "teachers" in query_lower or "staff" in query_lower:
-            print("✅ Found teaching staff match")
-            return staff.get("teaching_staff_overview", "")
-        elif "senior teacher" in query_lower or "faculty" in query_lower:
-            print("✅ Found faculty match")
-            return "Key faculty members include: " + ", ".join(staff.get("key_faculty_members", []))
-        elif "teacher training" in query_lower:
-            print("✅ Found teacher training match")
-            return staff.get("facilities_for_teacher_training", "")
+        for key, value in staff.items():
+            if isinstance(value, (str, list)):  # ignore nested dicts
+                if normalize(key) in query_norm:
+                    print(f"✅ Found staff match: {key}")
+                    if isinstance(value, list):
+                        return f"{key.title()}: {', '.join(value)}"
+                    return f"{key.title()}: {value}"
 
-        # 6. REMOVED: Generic responses that interfere with context system
-        # Let the context system handle these queries instead
-        
         print("❌ No school info match found")
         return None
 
