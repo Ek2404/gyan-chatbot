@@ -114,7 +114,6 @@ def get_context_aware_query(session_id: str, user_query: str):
 def update_session_context(session_id: str, query: str, response: str):
     """NEW: Update context memory when we find an event"""
     
-    # Check if response contains event information from conclave data
     response_lower = response.lower()
     
     # List of all events from conclave_data.json
@@ -130,11 +129,8 @@ def update_session_context(session_id: str, query: str, response: str):
             print(f"🧠 Updated context for session {session_id}: {event}")
             return
     
-    # Fallback for other events
-    if "scriptorium" in response_lower:
-        session_context[session_id] = "scriptorium"
-        print(f"🧠 Updated context for session {session_id}: scriptorium")
-    elif "annual sports meet" in response_lower or "sports meet" in response_lower:
+    # Fallback examples
+    if "annual sports meet" in response_lower or "sports meet" in response_lower:
         session_context[session_id] = "annual sports meet"
         print(f"🧠 Updated context for session {session_id}: annual sports meet")
 
@@ -176,7 +172,6 @@ def ask():
 
         # ✅ 1. Check school_data.json with context
         try:
-            # Try all context queries if available
             for context_query in context_queries:
                 school_info = get_school_info(context_query)
                 if school_info:
@@ -189,7 +184,6 @@ def ask():
 
         # ✅ 2. Check conclave_data.json with context
         try:
-            # Try all context queries if available
             for context_query in context_queries:
                 conclave_info = answer_conclave_query(context_query)
                 if conclave_info:
@@ -202,10 +196,8 @@ def ask():
 
         # ✅ 3. Fallback to AI with chat history
         try:
-            # Get current history for AI context
             current_history = chat_history.get(session_id, [])
             
-            # Debug: Show context being sent to AI
             print(f"🧠 Sending context to AI:")
             print(f"   Session: {session_id}")
             print(f"   Messages in context: {len(current_history)}")
@@ -235,7 +227,6 @@ def get_chat_history(session_id):
             history = chat_manager.load_session_history(session_id)
             return jsonify({"session_id": session_id, "messages": history})
         else:
-            # Fallback to memory
             history = chat_history.get(session_id, [])
             return jsonify({"session_id": session_id, "messages": history, "note": "from memory"})
     except Exception as e:
@@ -250,7 +241,6 @@ def list_sessions():
             sessions = chat_manager.list_all_sessions()
             return jsonify({"sessions": sessions})
         else:
-            # Fallback to memory sessions
             memory_sessions = [
                 {
                     "session_id": sid,
@@ -275,13 +265,11 @@ def clear_session(session_id):
         else:
             success = False
         
-        # Clear from memory
         if session_id in chat_history:
             del chat_history[session_id]
             print(f"✅ Cleared memory session: {session_id}")
             success = True
         
-        # Clear context
         if session_id in session_context:
             del session_context[session_id]
             print(f"🧠 Cleared context for session: {session_id}")
