@@ -1,0 +1,38 @@
+{
+  "session_id": "4dd83d19-48ab-4d29-bac9-cb9fdde6f0b2",
+  "created_at": "2025-08-16T14:23:55.707523",
+  "last_updated": "2025-08-16T14:23:55.707525",
+  "message_count": 6,
+  "messages": [
+    {
+      "role": "user",
+      "content": "plurilogues",
+      "timestamp": "2025-08-16T14:23:51.582393"
+    },
+    {
+      "role": "assistant",
+      "content": "📌 Plurilogues (Classes 8–12)\n🗓️ Sunday, 17th August 2025 | ⏰ 9:30 AM to 6:00 PM\n🎯 Format: Tag Extempore + Face-off Finals\n\nℹ️ A multi-format English debate consisting of an extempore round followed by a face-off final between selected teams.\n\n📖 Sample Rules:\n• Each team will receive a word/phrase/term 10 minutes before the start.\n• Speaker 1 delivers a 1.5-minute extempore speech.\n• Speaker 2 immediately continues for another 1.5 minutes.\n...\n\n🏆 Awards: Top 5 speakers recognized and awarded, Best Speakers (Prelims, Semi-finals, Finals)...",
+      "timestamp": "2025-08-16T14:23:51.586423"
+    },
+    {
+      "role": "user",
+      "content": "when is it?",
+      "timestamp": "2025-08-16T14:23:53.640343"
+    },
+    {
+      "role": "assistant",
+      "content": "Sorry, AI service is not configured. Please set OPENROUTER_API_KEY environment variable.",
+      "timestamp": "2025-08-16T14:23:53.654060"
+    },
+    {
+      "role": "user",
+      "content": "what are the rules?",
+      "timestamp": "2025-08-16T14:23:55.698769"
+    },
+    {
+      "role": "assistant",
+      "content": "Sorry, AI service is not configured. Please set OPENROUTER_API_KEY environment variable.",
+      "timestamp": "2025-08-16T14:23:55.707506"
+    }
+  ]
+}

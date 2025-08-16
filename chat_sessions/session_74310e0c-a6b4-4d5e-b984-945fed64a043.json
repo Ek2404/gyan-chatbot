@@ -1,0 +1,28 @@
+{
+  "session_id": "74310e0c-a6b4-4d5e-b984-945fed64a043",
+  "created_at": "2025-08-16T14:18:39.797305",
+  "last_updated": "2025-08-16T14:18:39.797309",
+  "message_count": 4,
+  "messages": [
+    {
+      "role": "user",
+      "content": "scriptorium",
+      "timestamp": "2025-08-16T14:18:37.629214"
+    },
+    {
+      "role": "assistant",
+      "content": "📌 Scriptorium (Classes 8–12)\n🗓️ Sunday, 17th August 2025 | ⏰ 9:30 AM to 6:00 PM\n🎯 Format: English Creative Writing (Blended Genres)\n\nℹ️ Students compose an original 15-line piece blending a short story, monologue, and poem based on a given prompt.\n\n📖 Sample Rules:\n• Use the same prompt (word, phrase, or image).\n• Output must blend 3 genres clearly in 15 lines.\n• Entries must have a title.\n...\n\n🏆 Awards: Top 3 Writers, Critic’s Choice Award...",
+      "timestamp": "2025-08-16T14:18:37.730733"
+    },
+    {
+      "role": "user",
+      "content": "its timing?",
+      "timestamp": "2025-08-16T14:18:39.792808"
+    },
+    {
+      "role": "assistant",
+      "content": "I can help you with timing information for specific events or activities. Please ask about a particular event, location, or activity.",
+      "timestamp": "2025-08-16T14:18:39.797277"
+    }
+  ]
+}

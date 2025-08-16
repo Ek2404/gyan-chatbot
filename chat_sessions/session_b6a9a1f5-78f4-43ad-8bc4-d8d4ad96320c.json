@@ -1,0 +1,18 @@
+{
+  "session_id": "b6a9a1f5-78f4-43ad-8bc4-d8d4ad96320c",
+  "created_at": "2025-08-16T14:06:27.234869",
+  "last_updated": "2025-08-16T14:06:27.234872",
+  "message_count": 2,
+  "messages": [
+    {
+      "role": "user",
+      "content": "who can participate?",
+      "timestamp": "2025-08-16T14:06:27.231910"
+    },
+    {
+      "role": "assistant",
+      "content": "I can tell you about who can participate in specific events or activities. Please ask about a particular event or activity.",
+      "timestamp": "2025-08-16T14:06:27.234848"
+    }
+  ]
+}

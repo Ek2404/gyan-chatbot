@@ -1,0 +1,28 @@
+{
+  "session_id": "87dc8b44-a1de-4cec-9699-1d0b9b9a73d1",
+  "created_at": "2025-08-16T14:23:59.802655",
+  "last_updated": "2025-08-16T14:23:59.802657",
+  "message_count": 4,
+  "messages": [
+    {
+      "role": "user",
+      "content": "QUEST",
+      "timestamp": "2025-08-16T14:23:57.748192"
+    },
+    {
+      "role": "assistant",
+      "content": "📌 QUEST (Classes 8–12)\n🗓️ Monday, 18th August 2025 | ⏰ 1:30 PM to 4:30 PM\n🎯 Format: Interdisciplinary Quiz\n\nℹ️ A live multimedia quiz testing general awareness, logic, lateral thinking, and observation skills through written prelims and live finals.\n\n📖 Sample Rules:\n• Teams of 2 students; class-mix allowed.\n• Written round determines 6 finalists.\n• Quiz includes audio-visual and rapid fire rounds.\n...\n\n🏆 Awards: Top 3 Teams, Best Individual Quizzer...",
+      "timestamp": "2025-08-16T14:23:57.752763"
+    },
+    {
+      "role": "user",
+      "content": "what are the prizes?",
+      "timestamp": "2025-08-16T14:23:59.782467"
+    },
+    {
+      "role": "assistant",
+      "content": "Sorry, AI service is not configured. Please set OPENROUTER_API_KEY environment variable.",
+      "timestamp": "2025-08-16T14:23:59.802635"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "session_id": "fc0f6b8e-4cc5-45ad-b386-f28a46f58153",
+  "created_at": "2025-08-16T14:03:07.187179",
+  "last_updated": "2025-08-16T14:03:07.187183",
+  "message_count": 2,
+  "messages": [
+    {
+      "role": "user",
+      "content": "what about prizes?",
+      "timestamp": "2025-08-16T14:03:07.181176"
+    },
+    {
+      "role": "assistant",
+      "content": "I can provide information about prizes and awards for specific events or competitions. Please ask about a particular event or activity.",
+      "timestamp": "2025-08-16T14:03:07.187151"
+    }
+  ]
+}

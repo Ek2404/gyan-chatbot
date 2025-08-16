@@ -1,0 +1,7 @@
+pyttsx3
+speechrecognition
+requests
+beautifulsoup4
+openai
+flask
+python-dotenv
