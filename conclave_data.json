@@ -3,22 +3,23 @@
     "event_name": "Plurilogues",
     "class_range": "8–12",
     "rounds": 2,
-    "format": "Tag Extempore + Face-off Finals",
+    "format": "Tag Extempore + Face-off Finals + Block-and-Tackle",
     "day": "Sunday, 17th August 2025",
     "timing": "9:30 AM to 6:00 PM",
-    "description": "A multi-format English debate consisting of an extempore round followed by a face-off final between selected teams.",
+    "description": "Multi-format English debate with extempore, finals, and block-and-tackle rounds.",
     "rules": [
-      "Each team will receive a word/phrase/term 10 minutes before the start.",
-      "Speaker 1 delivers a 1.5-minute extempore speech.",
-      "Speaker 2 immediately continues for another 1.5 minutes.",
-      "Final includes Block-and-Tackle round with stance changes on jury cues.",
-      "Each finalist has 2.5 mins (opening) + 1.5 mins (second) to speak."
+      "Each team gets a word/phrase/term 10 minutes before.",
+      "Speaker 1: 1.5 minutes; Speaker 2: 1.5 minutes (continuation).",
+      "Finals: Four teams, with 2 for and 2 against the motion.",
+      "Opening speakers: 2.5 minutes each; second speakers: 1.5 minutes each.",
+      "Block-and-Tackle: Switch stances (For/Against/Neutral) on jury cues.",
+      "Participants must wear school uniform."
     ],
     "prizes": [
-      "Top 5 speakers recognized and awarded",
+      "Top Five Speakers",
       "Best Speakers (Prelims, Semi-finals, Finals)",
       "Best Delegation",
-      "Best Research Delegation",
+      "Joint Best Research Delegation",
       "Runner-Ups (1st and Joint 3rd)"
     ]
   },
@@ -26,19 +27,20 @@
     "event_name": "Continuum",
     "class_range": "8–12",
     "rounds": 1,
-    "format": "Live Dialogue with Painting",
+    "format": "Dialogue + Live Painting",
     "day": "Sunday, 17th August 2025",
     "timing": "9:30 AM to 6:00 PM",
-    "description": "An interdisciplinary event where participants present a dialogue about Picasso’s Guernica while creating live paintings.",
+    "description": "Participants deliver a dialogue on Picasso’s Guernica while creating simultaneous live paintings.",
     "rules": [
-      "Two members speak on Guernica; all three paint simultaneously.",
+      "Team of 3 (only one team per school).",
+      "Two members present dialogue; all three paint simultaneously.",
       "Only wax crayons and markers allowed.",
-      "No costumes or props except 2 hats, 2 empty frames, 2 umbrellas.",
-      "A3 sheets and easels provided by host.",
-      "Use stage space creatively; connect artwork to modern context."
+      "Props allowed: 2 hats, 2 frames, 2 umbrellas.",
+      "A3 sheets, easels, chairs, tables provided by host.",
+      "Time limit: 7 minutes including entry/exit."
     ],
     "prizes": [
-      "Top 3 Teams",
+      "Top 3 Teams (First, Second, Joint Third)",
       "Critic’s Choice Award"
     ]
   },
@@ -46,60 +48,59 @@
     "event_name": "Quartet",
     "class_range": "8–12",
     "rounds": 1,
-    "format": "Experimental Theatre Production",
+    "format": "Experimental Theatre",
     "day": "Sunday, 17th August 2025",
     "timing": "9:30 AM to 6:00 PM",
-    "description": "A short experimental performance featuring two historical figures, a concept, and one silent performer using gestures.",
+    "description": "Teams perform a short play with 2 historical figures, a concept, and one silent performer.",
     "rules": [
-      "Team of 4: 3 speakers and 1 silent performer.",
-      "Historical characters and abstract concepts must be included.",
-      "Only chairs/tables provided, no props, lights or mics.",
-      "Time limit: 4.5 mins including entry/exit.",
-      "Silent performer must enhance meaning through gestures."
+      "Team of 4 (3 speakers + 1 silent performer).",
+      "Performance time: 4.5 minutes (entry to exit).",
+      "Only chairs and tables provided; no props or mics.",
+      "Silent performer must enhance meaning via gestures.",
+      "No special lights/sounds; costumes optional but not judged."
     ],
     "prizes": [
       "Top 3 Teams",
       "Critic’s Choice Award"
     ]
   },
-  "scriptorium": {
-    "event_name": "Scriptorium",
+  "rothko": {
+    "event_name": "Rothko-Gaitonde Memorial Mono-Colour Exploration",
     "class_range": "8–12",
     "rounds": 1,
-    "format": "English Creative Writing (Blended Genres)",
+    "format": "Abstract Painting",
     "day": "Sunday, 17th August 2025",
     "timing": "9:30 AM to 6:00 PM",
-    "description": "Students compose an original 15-line piece blending a short story, monologue, and poem based on a given prompt.",
+    "description": "Abstract painting exploration using only one acrylic colour in horizontal and vertical lines.",
     "rules": [
-      "Use the same prompt (word, phrase, or image).",
-      "Output must blend 3 genres clearly in 15 lines.",
-      "Entries must have a title.",
-      "Judged on structure, genre clarity, and creativity.",
-      "Submit individual handwritten piece on-site."
+      "1 participant per school.",
+      "Theme and mood given 5 minutes before.",
+      "Use only A3 sheet and one acrylic colour provided.",
+      "1 hour 15 minutes time limit.",
+      "Artwork must explore depth, tone, and density of single colour."
     ],
     "prizes": [
-      "Top 3 Writers",
-      "Critic’s Choice Award",
-      "Top Three Delegations"
+      "Top 3 Participants",
+      "Critic’s Choice Award"
     ]
   },
-  "sensorium": {
-    "event_name": "Sensorium",
+  "illustrations": {
+    "event_name": "Interpretative Illustrations (Ode to Acharya Nandalal Bose)",
     "class_range": "8–12",
     "rounds": 1,
-    "format": "Prop-based Multisensory Prompt Interpretation",
-    "day": "Monday, 18th August 2025",
-    "timing": "9:30 AM to 12:30 PM",
-    "description": "Participants will interpret a multisensory prompt using creative expression across any format — from movement to mime to spoken word.",
+    "format": "Calligraphy + Illustration",
+    "day": "Sunday, 17th August 2025",
+    "timing": "9:30 AM to 6:00 PM",
+    "description": "Illustration and calligraphy on a page of the Constitution.",
     "rules": [
-      "Prompt will involve at least 3 sensory inputs (sound, smell, touch, visuals).",
-      "Only 1 performer from each team; no costume changes.",
-      "Time limit: 2.5 minutes max.",
-      "No pre-recorded music allowed; live sounds encouraged.",
-      "Presentation must reflect the theme's emotional/creative depth."
+      "1 participant per school.",
+      "Page of Constitution provided.",
+      "Illustrations must connect with content.",
+      "Use calligraphy pens, fountain pen, and ink.",
+      "1 hour 5 minutes time limit."
     ],
     "prizes": [
-      "Top 3 Performers",
+      "Top 3 Participants",
       "Critic’s Choice Award"
     ]
   },
@@ -107,123 +108,204 @@
     "event_name": "QUEST",
     "class_range": "8–12",
     "rounds": 2,
-    "format": "Interdisciplinary Quiz",
+    "format": "General Quiz",
+    "day": "Sunday, 17th August 2025",
+    "timing": "9:30 AM to 6:00 PM",
+    "description": "Written elimination round followed by live multimedia quiz finals.",
+    "rules": [
+      "Team of 2 per school.",
+      "Written prelim (16 Qs), top 4 qualify.",
+      "Final includes audio-visual rounds.",
+      "No negative marking.",
+      "Quizmaster’s decision final."
+    ],
+    "prizes": [
+      "Top 3 Teams",
+      "Best Quizzard",
+      "Most Promising Quizzard",
+      "Best Answer"
+    ]
+  },
+  "scriptorium": {
+    "event_name": "Scriptorium",
+    "class_range": "8–12",
+    "rounds": 1,
+    "format": "Creative Writing",
+    "day": "Sunday, 17th August 2025",
+    "timing": "9:30 AM to 6:00 PM",
+    "description": "15-line creative writing blending short story, monologue, and poem.",
+    "rules": [
+      "Individual entries only.",
+      "All participants use same prompt (word/phrase/image).",
+      "Must blend 3 genres clearly in 15 lines.",
+      "Handwritten submission only.",
+      "45 minutes writing time."
+    ],
+    "prizes": [
+      "Top 3 Writers",
+      "Critic’s Choice Award",
+      "Top 3 Delegations"
+    ]
+  },
+  "telling": {
+    "event_name": "Telling the Tale",
+    "class_range": "5–7",
+    "rounds": 1,
+    "format": "Storytelling with Object + Music",
     "day": "Monday, 18th August 2025",
-    "timing": "1:30 PM to 4:30 PM",
-    "description": "A live multimedia quiz testing general awareness, logic, lateral thinking, and observation skills through written prelims and live finals.",
+    "timing": "9:30 AM to 6:00 PM",
+    "description": "Storytelling using object, frame, and music inspired from RBI Ombudsmen storybook.",
     "rules": [
-      "Teams of 2 students; class-mix allowed.",
-      "Written round determines 6 finalists.",
-      "Quiz includes audio-visual and rapid fire rounds.",
-      "No mobile phones allowed during the event.",
-      "Audience interaction rounds may be included."
+      "Team of 3.",
+      "Each speaker: 2.5 minutes; total 6 minutes.",
+      "1 object + 1 empty frame must be used.",
+      "One member provides musical accompaniment.",
+      "Performance must be collaborative and engaging."
     ],
     "prizes": [
       "Top 3 Teams",
-      "Best Individual Quizzer"
+      "Best Coordination Award"
     ]
   },
-  "crossconnect": {
-    "event_name": "CrossConnect",
-    "class_range": "8–12",
+  "scribe": {
+    "event_name": "Scribe",
+    "class_range": "5–7",
     "rounds": 1,
-    "format": "Subject Integration Challenge",
-    "day": "Tuesday, 19th August 2025",
-    "timing": "9:30 AM to 11:30 AM",
-    "description": "Teams must present a 5-minute concept pitch integrating two or more academic disciplines using real-world problems or stories.",
+    "format": "Creative Writing (Prose + Poetry)",
+    "day": "Monday, 18th August 2025",
+    "timing": "9:30 AM to 6:00 PM",
+    "description": "Creative writing tribute to the Constitution with prose and poetry entries.",
     "rules": [
-      "Team of 2 students from different subject backgrounds.",
-      "Presentation must include visuals (can be digital or handmade).",
-      "No reading from scripts allowed.",
-      "Focus on originality, clarity, and interdisciplinary depth.",
-      "No internet-connected devices allowed during the event."
+      "Team of 2 (1 prose, 1 poetry).",
+      "Theme: A tribute to the Constitution.",
+      "Prose: 74+1 words, Poetry: 44+1 words.",
+      "Handwritten entries only; A4 sheets provided.",
+      "Time limit: 65 minutes."
     ],
     "prizes": [
       "Top 3 Teams",
-      "Innovation Award"
+      "Critic’s Choice Award",
+      "3 Best Individual Entries"
     ]
   },
-  "biblioquest": {
-    "event_name": "BiblioQuest",
-    "class_range": "8–12",
+  "duologues": {
+    "event_name": "Duologues (Shakespeare + Freedom Fighter)",
+    "class_range": "5–8",
     "rounds": 1,
-    "format": "Library-Themed Treasure Hunt",
-    "day": "Tuesday, 19th August 2025",
-    "timing": "11:45 AM to 1:00 PM",
-    "description": "Participants follow clues, solve puzzles, and navigate research-based tasks across books, catalogues, and archive materials.",
+    "format": "Dialogue Play",
+    "day": "Monday, 18th August 2025",
+    "timing": "9:30 AM to 6:00 PM",
+    "description": "Dialogue performance between one Shakespearean character and one Indian freedom fighter.",
     "rules": [
-      "Team of 3 students.",
-      "No mobile devices allowed.",
-      "Use of library catalogue and index encouraged.",
-      "All answers must be written down and submitted on time.",
-      "Focus on speed, accuracy, and decoding ability."
+      "Team of 2.",
+      "Performance: 3.5–4.5 minutes.",
+      "No props or costumes allowed.",
+      "Only 2 chairs available.",
+      "No pre-recorded audio/visuals."
     ],
     "prizes": [
       "Top 3 Teams",
-      "Speed & Strategy Award"
+      "Critic’s Choice Delegation",
+      "Best Performer Awards"
     ]
   },
-  "newstrack": {
-    "event_name": "Newstrack",
-    "class_range": "8–12",
+  "sensorium": {
+    "event_name": "Sensorium",
+    "class_range": "4–8",
     "rounds": 1,
-    "format": "Investigative Reporting Presentation",
-    "day": "Tuesday, 19th August 2025",
-    "timing": "11:45 AM to 1:00 PM",
-    "description": "Teams present an investigative report (real or imagined) including background, facts, interviews, and possible solutions.",
+    "format": "Museum of Memories",
+    "day": "Monday, 18th August 2025",
+    "timing": "9:30 AM to 6:00 PM",
+    "description": "Creative memory presentation using songs, textiles, pioneers, and posters.",
     "rules": [
-      "Teams of 2 students.",
-      "One student anchors the presentation; the other plays a reporter/interviewee.",
-      "Use of visual props or slides allowed but not mandatory.",
-      "Presentations must be under 4 minutes.",
-      "Judged on clarity, impact, and journalistic depth."
+      "Team of 4.",
+      "6 minutes presentation including rap/song, textile story, pioneer speech, and posters.",
+      "1 member acts as compere.",
+      "Uniform mandatory; no costumes allowed."
     ],
     "prizes": [
       "Top 3 Teams",
-      "Best Reporter Award"
+      "Best Poster Delegation",
+      "Critic’s Choice Award"
     ]
   },
-  "visualvocabulary": {
-    "event_name": "Visual Vocabulary",
-    "class_range": "6–8",
+  "relayart": {
+    "event_name": "Duologue Relay Artworks",
+    "class_range": "5–8",
     "rounds": 1,
-    "format": "Vocabulary Word Collage Poster",
-    "day": "Tuesday, 19th August 2025",
-    "timing": "9:30 AM to 11:30 AM",
-    "description": "Students create a visual collage illustrating 3 selected vocabulary words with pictures, cutouts, drawings, and captions.",
+    "format": "Photography + Painting",
+    "day": "Monday, 18th August 2025",
+    "timing": "9:30 AM to 6:00 PM",
+    "description": "One participant photographs a tree; other paints it as semi-miniature landscape.",
+    "rules": [
+      "Team of 2 (1 photographer + 1 painter).",
+      "Tree assigned on spot.",
+      "Photography: unedited raw submission.",
+      "Painting: Half A3 sheet with watercolors.",
+      "1 hour 5 minutes duration."
+    ],
+    "prizes": [
+      "Top 3 Teams",
+      "Critic’s Choice Award"
+    ]
+  },
+  "artcritic": {
+    "event_name": "Art Critic Speaks",
+    "class_range": "7–8",
+    "rounds": 1,
+    "format": "Visual Art Extempore",
+    "day": "Monday, 18th August 2025",
+    "timing": "9:30 AM to 6:00 PM",
+    "description": "Critique speech on assigned artwork in 1 hour prep + 1.5 min presentation.",
     "rules": [
       "Individual event.",
-      "A3 sheet to be provided; only dry materials allowed.",
-      "Each word must have a heading, image, and 1-line caption.",
-      "Words should be level-appropriate and creatively presented.",
-      "No digital elements allowed."
+      "1 artwork assigned an hour before.",
+      "Speech must analyze techniques, motifs, context, and artist background.",
+      "Must embody roles: critic, student, aficionado."
     ],
     "prizes": [
-      "Top 3 Posters",
-      "Creativity Award"
+      "Top 3 Participants",
+      "Critic’s Choice Award"
     ]
   },
-  "unreimagined": {
-    "event_name": "United Nations Reimagined",
-    "class_range": "9–12",
+  "sandarbh": {
+    "event_name": "Sandarbh",
+    "class_range": "5–12",
     "rounds": 1,
-    "format": "Diplomatic Simulation",
+    "format": "Patriotic Choir",
     "day": "Tuesday, 19th August 2025",
-    "timing": "1:30 PM to 4:30 PM",
-    "description": "Participants represent countries in a reimagined UN setup to address modern global crises through policy presentation and debate.",
+    "timing": "9:15 AM to 4:00 PM",
+    "description": "Choir sings two patriotic songs: one in Hindi, one in another Indian language.",
     "rules": [
-      "Each team represents one country.",
-      "Delegates must propose resolutions to a crisis revealed on the day.",
-      "Spoken and written communication will be assessed.",
-      "Judged on diplomacy, collaboration, and realism of policy.",
-      "No props or costumes allowed."
+      "Choir of 5–6 members.",
+      "Songs must be pre-1971; Bollywood songs post-1971 not allowed.",
+      "No pre-recorded music allowed.",
+      "Only acoustic instruments permitted.",
+      "Total duration: 6.5–7.5 minutes."
     ],
     "prizes": [
-      "Best Delegation",
-      "Best Policy Draft",
-      "Diplomatic Impact Award"
+      "Top 6 Choirs"
     ]
-}
-
-  
+  },
+  "movemeant": {
+    "event_name": "Movemeant",
+    "class_range": "7–12",
+    "rounds": 2,
+    "format": "Dance Film + Live Performance",
+    "day": "Tuesday, 19th August 2025",
+    "timing": "9:15 AM to 4:00 PM",
+    "description": "Dance competition with preliminary filmed submission and live finals.",
+    "rules": [
+      "Team of 2 (1 dancer + 1 technical crew).",
+      "Dance film: 1.5–2 minutes; shot and edited onsite.",
+      "Final live performance: 1.5–2 minutes, no soundtrack.",
+      "Props allowed: chair, comb, red ribbon.",
+      "Costumes: plain T-shirt + pants only; no makeup."
+    ],
+    "prizes": [
+      "Top 3 Dance Films",
+      "Top 3 Live Performances",
+      "Best Live Imagescape Delegation"
+    ]
+  }
 }
