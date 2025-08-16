@@ -25,15 +25,27 @@ def answer_conclave_query(query: str):
         "registration": ["registration", "register", "deadline", "apply", "entry"]
     }
 
-    # 🔍 Step 1: Try to find event match
+    # 🔍 Step 1: Try to find event match (direct, partial, fuzzy)
+    import difflib
     matched_event = None
+    best_score = 0
+    best_event = None
     for key, data in conclave_data.items():
         event_name = data.get("event_name", "").lower()
+        # Direct match
         if key.lower() in query or event_name in query:
             matched_event = data
             break
+        # Fuzzy match
+        score = difflib.SequenceMatcher(None, query, event_name).ratio()
+        if score > best_score:
+            best_score = score
+            best_event = data
+    # If no direct match, use best fuzzy match if score is reasonable
+    if not matched_event and best_score > 0.6:
+        matched_event = best_event
 
-    # Step 2: Context-based matching if no direct match
+    # Step 2: Context-based matching if no direct/fuzzy match
     if not matched_event:
         query_words = query.split()
         for key, data in conclave_data.items():
@@ -50,6 +62,9 @@ def answer_conclave_query(query: str):
 
     # Step 3: Return info if event matched
     if matched_event:
+        # If query contains 'where' and event name, force venue response
+        if "where" in query:
+            return format_specific_section(matched_event, "venue")
         for section, triggers in keywords.items():
             if any(word in query for word in triggers):
                 return format_specific_section(matched_event, section)
