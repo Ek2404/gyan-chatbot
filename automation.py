@@ -55,6 +55,38 @@ def get_school_info(query):
                 return "No contact details found."
         if "principal" in query_lower:
             return f"The principal is {staff.get('principal')}"
+        elif "vice principal" in query_lower:
+            return f"The vice principal is {staff.get('vice principal')}"
+        elif "assistant vice principal" in query_lower:
+            return f"The assistant vice principal is {staff.get('assistant vice principal')}"
+        elif "school co-ordinator" in query_lower or "coordinator" in query_lower:
+            return f"The school co-ordinator is {staff.get('school co-ordinator')}"
+        elif "outside school incharge" in query_lower:
+            return f"The outside school incharge is {staff.get('outside school incharge')}"
+        elif "events incharge" in query_lower:
+            return f"The events incharge is {staff.get('events incharge')}"
+        elif "registration incharge" in query_lower:
+            return f"The registration incharge is {staff.get('registration incharge')}"
+        elif "school captain" in query_lower or ("captain" in query_lower and "vice" not in query_lower):
+            return f"The school captain is {staff.get('school captain')}"
+        elif "school vice captain" in query_lower or ("vice captain" in query_lower):
+            return f"The school vice captain is {staff.get('school vice captain')}"
+        elif (
+            "student volunteer" in query_lower
+            or "volunteer" in query_lower
+            or "student helper" in query_lower
+            or "student assistant" in query_lower
+            or "student support" in query_lower
+        ):
+            volunteers = staff.get("student volunteers", [])
+            emails = staff.get("student volunteers email ids", [])
+            if volunteers:
+                info = "Student Volunteers: " + ", ".join(volunteers)
+                if emails:
+                    info += "\nEmails: " + ", ".join(emails)
+                return info
+            else:
+                return "No student volunteers found."
         elif "teachers" in query_lower or "staff" in query_lower:
             return staff.get("teaching_staff_overview", "")
         elif "senior teacher" in query_lower or "faculty" in query_lower:
@@ -66,8 +98,6 @@ def get_school_info(query):
             name = dev.get("name", "Ekansh Garg")
             email = dev.get("email", "ekansh.6874@birlaschoolkalyan.com")
             return f"Chatbot Developer: {name} ({email})"
-        elif "contact details" in query_lower:
-            return staff.get("contact details", "")
 
         # -----------------------------
         # 2. Conclave Events Section
