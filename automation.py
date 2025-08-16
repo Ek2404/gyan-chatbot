@@ -53,10 +53,10 @@ def get_school_info(query):
                 return "Contact Details:\n" + "\n".join(contacts)
             else:
                 return "No contact details found."
-        if "principal" in query_lower:
-            return f"The principal is {staff.get('principal')}"
-        elif "vice principal" in query_lower:
+        if "vice principal" in query_lower:
             return f"The vice principal is {staff.get('vice principal')}"
+        elif "principal" in query_lower:
+            return f"The principal is {staff.get('principal')}"
         elif "assistant vice principal" in query_lower:
             return f"The assistant vice principal is {staff.get('assistant vice principal')}"
         elif "school co-ordinator" in query_lower or "coordinator" in query_lower:
