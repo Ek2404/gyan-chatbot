@@ -46,6 +46,13 @@ def get_school_info(query):
 
         # Staff queries
         staff = school_data.get("staff", {})
+        # Handle contact details (list)
+        if "contact details" in query_lower:
+            contacts = staff.get("contact details", [])
+            if contacts:
+                return "Contact Details:\n" + "\n".join(contacts)
+            else:
+                return "No contact details found."
         if "principal" in query_lower:
             return f"The principal is {staff.get('principal')}"
         elif "teachers" in query_lower or "staff" in query_lower:
@@ -54,6 +61,13 @@ def get_school_info(query):
             return "Key faculty members include: " + ", ".join(staff.get("key_faculty_members", []))
         elif "teacher training" in query_lower:
             return staff.get("facilities_for_teacher_training", "")
+        elif "chatbot developer" in query_lower or "developer" in query_lower or "ekansh garg" in query_lower:
+            dev = staff.get("chatbot-developer", {})
+            name = dev.get("name", "Ekansh Garg")
+            email = dev.get("email", "ekansh.6874@birlaschoolkalyan.com")
+            return f"Chatbot Developer: {name} ({email})"
+        elif "contact details" in query_lower:
+            return staff.get("contact details", "")
 
         # -----------------------------
         # 2. Conclave Events Section
