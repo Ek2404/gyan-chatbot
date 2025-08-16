@@ -61,8 +61,13 @@ def get_school_info(query):
         for event_key, event_data in conclave_data.items():
             # Match event name
             if event_key.lower() in query_lower or event_data["event_name"].lower() in query_lower:
+                # Venue/location/where queries
+                if "venue" in query_lower or "location" in query_lower or "where" in query_lower or "place" in query_lower or "hall" in query_lower:
+                    venue = event_data.get("venue") or event_data.get("location") or event_data.get("place") or event_data.get("hall") or "Venue details not available."
+                    return f"Venue for {event_data['event_name']}: {venue}"
+
                 # If user asked about timing
-                if "time" in query_lower or "timing" in query_lower or "schedule" in query_lower:
+                elif "time" in query_lower or "timing" in query_lower or "schedule" in query_lower:
                     return f"{event_data['event_name']} will be held on {event_data['day']} at {event_data['timing']} in {event_data['venue']}."
 
                 # If user asked about rules
@@ -75,7 +80,12 @@ def get_school_info(query):
 
                 # Otherwise general info
                 else:
-                    return f"{event_data['event_name']} ({event_data['class_range']}): {event_data['description']}"
+                    # Fallback: if event has venue, append it to general info
+                    venue = event_data.get("venue")
+                    if venue:
+                        return f"{event_data['event_name']} ({event_data['class_range']}): {event_data['description']}\nVenue: {venue}"
+                    else:
+                        return f"{event_data['event_name']} ({event_data['class_range']}): {event_data['description']}"
 
         # -----------------------------
         # 3. No match
