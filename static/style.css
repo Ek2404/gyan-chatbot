@@ -109,3 +109,10 @@ button:hover { filter: brightness(1.1); }
 .bot-msg, .msg.jarvis p {
   white-space: pre-wrap;
 }
+
+.info{
+  margin-top:10px;
+  font-size:0.98em;
+  font-weight:400;
+  color:white;  
+}
