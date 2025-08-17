@@ -64,6 +64,15 @@
             color: #333;
             margin-top: 2px;
         }
+        .last-message {
+            font-style: italic;
+            color: #555;
+            margin-top: 8px;
+            padding: 6px 10px;
+            background: #fff9c4;
+            border-left: 3px solid #fbc02d;
+            border-radius: 3px;
+        }
         .actions {
             display: flex;
             gap: 10px;
@@ -208,11 +217,11 @@
                             <div class="info-label">Messages</div>
                             <div class="info-value">${session.message_count}</div>
                         </div>
-                        ${session.note ? `<div class="info-item">
-                            <div class="info-label">Note</div>
-                            <div class="info-value">${session.note}</div>
-                        </div>` : ''}
                     </div>
+                    
+                    ${session.last_message ? 
+                        `<div class="last-message">📝 Last Message: ${session.last_message}</div>` 
+                        : ''}
                     
                     <div id="history-${session.session_id}" class="chat-history" style="display: none;"></div>
                 </div>
