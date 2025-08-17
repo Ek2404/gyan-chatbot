@@ -40,14 +40,24 @@ class ChatHistoryManager:
             return False
     
     def save_session_history(self, session_id: str, history: List[Dict]) -> bool:
-        """Save entire session history to file"""
+        """Save entire session history to file (preserving created_at)"""
         try:
             file_path = self.get_session_file_path(session_id)
-            
+
+            # Preserve old created_at if exists
+            created_at = datetime.now().isoformat()
+            if os.path.exists(file_path):
+                try:
+                    with open(file_path, 'r', encoding='utf-8') as f:
+                        existing_data = json.load(f)
+                        created_at = existing_data.get("created_at", created_at)
+                except Exception as e:
+                    print(f"⚠️ Could not preserve created_at for {session_id}: {e}")
+
             # Create session data with metadata
             session_data = {
                 "session_id": session_id,
-                "created_at": datetime.now().isoformat(),
+                "created_at": created_at,
                 "last_updated": datetime.now().isoformat(),
                 "message_count": len(history),
                 "messages": history
@@ -89,13 +99,19 @@ class ChatHistoryManager:
             
             with open(file_path, 'r', encoding='utf-8') as f:
                 session_data = json.load(f)
+
+            messages = session_data.get("messages", [])
+            last_message_preview = ""
+            if messages:
+                last_message_preview = messages[-1]["content"][:50] + ("..." if len(messages[-1]["content"]) > 50 else "")
             
-            # Return metadata only (exclude messages for performance)
+            # Return metadata with last message preview
             return {
                 "session_id": session_data.get("session_id"),
                 "created_at": session_data.get("created_at"),
                 "last_updated": session_data.get("last_updated"),
-                "message_count": session_data.get("message_count", 0)
+                "message_count": session_data.get("message_count", 0),
+                "last_message": last_message_preview
             }
             
         except Exception as e:
@@ -119,7 +135,7 @@ class ChatHistoryManager:
             return False
     
     def list_all_sessions(self) -> List[Dict]:
-        """List all available sessions with basic info"""
+        """List all available sessions with basic info + last message preview"""
         sessions = []
         
         try:
