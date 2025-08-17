@@ -64,15 +64,6 @@
             color: #333;
             margin-top: 2px;
         }
-        .last-message {
-            font-style: italic;
-            color: #555;
-            margin-top: 8px;
-            padding: 6px 10px;
-            background: #fff9c4;
-            border-left: 3px solid #fbc02d;
-            border-radius: 3px;
-        }
         .actions {
             display: flex;
             gap: 10px;
@@ -217,11 +208,15 @@
                             <div class="info-label">Messages</div>
                             <div class="info-value">${session.message_count}</div>
                         </div>
+                        ${session.note ? `<div class="info-item">
+                            <div class="info-label">Note</div>
+                            <div class="info-value">${session.note}</div>
+                        </div>` : ''}
+                        ${session.last_message ? `<div class="info-item">
+                            <div class="info-label">Last Msg</div>
+                            <div class="info-value">${session.last_message}</div>
+                        </div>` : ''}
                     </div>
-                    
-                    ${session.last_message ? 
-                        `<div class="last-message">📝 Last Message: ${session.last_message}</div>` 
-                        : ''}
                     
                     <div id="history-${session.session_id}" class="chat-history" style="display: none;"></div>
                 </div>
@@ -296,18 +291,21 @@
             }
         }
         
+        function parseDate(dateString) {
+            if (!dateString) return null;
+            // If missing TZ, assume UTC and append Z
+            const hasTZ = /[zZ]|[+\-]\d{2}:\d{2}$/.test(dateString);
+            const safe = hasTZ ? dateString : (dateString.replace(/\.\d+/, '') + 'Z');
+            const d = new Date(safe);
+            return isNaN(d) ? null : d;
+        }
+
         function formatDate(dateString) {
-            if (!dateString) return 'N/A';
-            
-            try {
-                const date = new Date(dateString);
-                return date.toLocaleString();
-            } catch (error) {
-                return dateString;
-            }
+            const d = parseDate(dateString);
+            return d ? d.toLocaleString() : 'N/A';
         }
         
-        // Load sessions when page loads
+        // Load sessions on page load
         window.onload = function() {
             loadSessions();
         };
