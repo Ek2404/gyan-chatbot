@@ -1,1231 +1,141 @@
 {
   "locations": {
-    "9A": {
-      "rooms": [
-        "1"
-      ],
-      "aliases": [
-        "9a",
-        "9 a",
-        "9th a",
-        "9st a",
-        "class 9a",
-        "class 9 a",
-        "nine a",
-        "nineth a"
-      ]
-    },
-    "10A": {
-      "rooms": [
-        "105"
-      ],
-      "aliases": [
-        "10a",
-        "10 a",
-        "10th a",
-        "10st a",
-        "class 10a",
-        "class 10 a",
-        "ten a",
-        "tenth a"
-      ]
-    },
-    "9B": {
-      "rooms": [
-        "12"
-      ],
-      "aliases": [
-        "9b",
-        "9 b",
-        "9th b",
-        "9st b",
-        "class 9b",
-        "class 9 b",
-        "nine b",
-        "nineth b"
-      ]
-    },
-    "10B": {
-      "rooms": [
-        "106"
-      ],
-      "aliases": [
-        "10b",
-        "10 b",
-        "10th b",
-        "10st b",
-        "class 10b",
-        "class 10 b",
-        "ten b",
-        "tenth b"
-      ]
-    },
-    "9C": {
-      "rooms": [
-        "4"
-      ],
-      "aliases": [
-        "9c",
-        "9 c",
-        "9th c",
-        "9st c",
-        "class 9c",
-        "class 9 c",
-        "nine c",
-        "nineth c"
-      ]
-    },
-    "9E": {
-      "rooms": [
-        "112"
-      ],
-      "aliases": [
-        "9e",
-        "9 e",
-        "9th e",
-        "9st e",
-        "class 9e",
-        "class 9 e",
-        "nine e",
-        "nineth e"
-      ]
-    },
-    "9D": {
-      "rooms": [
-        "5"
-      ],
-      "aliases": [
-        "9d",
-        "9 d",
-        "9th d",
-        "9st d",
-        "class 9d",
-        "class 9 d",
-        "nine d",
-        "nineth d"
-      ]
-    },
-    "9F": {
-      "rooms": [
-        "106 E"
-      ],
-      "aliases": [
-        "9f",
-        "9 f",
-        "9th f",
-        "9st f",
-        "class 9f",
-        "class 9 f",
-        "nine f",
-        "nineth f"
-      ]
-    },
-    "105 E": {
-      "rooms": [
-        "Com. Lab 3"
-      ],
-      "aliases": [
-        "105 e"
-      ]
-    },
-    "10C": {
-      "rooms": [
-        "229"
-      ],
-      "aliases": [
-        "10c",
-        "10 c",
-        "10th c",
-        "10st c",
-        "class 10c",
-        "class 10 c",
-        "ten c",
-        "tenth c"
-      ]
-    },
-    "10D": {
-      "rooms": [
-        "228"
-      ],
-      "aliases": [
-        "10d",
-        "10 d",
-        "10th d",
-        "10st d",
-        "class 10d",
-        "class 10 d",
-        "ten d",
-        "tenth d"
-      ]
-    },
-    "Nursery C": {
-      "rooms": [
-        "19"
-      ],
-      "aliases": [
-        "nursery c"
-      ]
-    },
-    "JKG C": {
-      "rooms": [
-        "19"
-      ],
-      "aliases": [
-        "jkg c"
-      ]
-    },
-    "10E": {
-      "rooms": [
-        "227"
-      ],
-      "aliases": [
-        "10e",
-        "10 e",
-        "10th e",
-        "10st e",
-        "class 10e",
-        "class 10 e",
-        "ten e",
-        "tenth e"
-      ]
-    },
-    "Nursery D": {
-      "rooms": [
-        "26"
-      ],
-      "aliases": [
-        "nursery d"
-      ]
-    },
-    "JKG D": {
-      "rooms": [
-        "26"
-      ],
-      "aliases": [
-        "jkg d"
-      ]
-    },
-    "10F": {
-      "rooms": [
-        "232"
-      ],
-      "aliases": [
-        "10f",
-        "10 f",
-        "10th f",
-        "10st f",
-        "class 10f",
-        "class 10 f",
-        "ten f",
-        "tenth f"
-      ]
-    },
-    "Nursery E": {
-      "rooms": [
-        "25"
-      ],
-      "aliases": [
-        "nursery e"
-      ]
-    },
-    "JKG E": {
-      "rooms": [
-        "25"
-      ],
-      "aliases": [
-        "jkg e"
-      ]
-    },
-    "10G": {
-      "rooms": [
-        "225"
-      ],
-      "aliases": [
-        "10g",
-        "10 g",
-        "10th g",
-        "10st g",
-        "class 10g",
-        "class 10 g",
-        "ten g",
-        "tenth g"
-      ]
-    },
-    "Nursery F": {
-      "rooms": [
-        "21"
-      ],
-      "aliases": [
-        "nursery f"
-      ]
-    },
-    "JKG F": {
-      "rooms": [
-        "21"
-      ],
-      "aliases": [
-        "jkg f"
-      ]
-    },
-    "9G": {
-      "rooms": [
-        "229 E"
-      ],
-      "aliases": [
-        "9g",
-        "9 g",
-        "9th g",
-        "9st g",
-        "class 9g",
-        "class 9 g",
-        "nine g",
-        "nineth g"
-      ]
-    },
-    "JKG G": {
-      "rooms": [
-        "22"
-      ],
-      "aliases": [
-        "jkg g"
-      ]
-    },
-    "228 E": {
-      "rooms": [
-        "1A / SKG A"
-      ],
-      "aliases": [
-        "228 e"
-      ]
-    },
-    "Kg Activity": {
-      "rooms": [
-        "22 E"
-      ],
-      "aliases": [
-        "kg activity"
-      ]
-    },
-    "1B": {
-      "rooms": [
-        "28"
-      ],
-      "aliases": [
-        "1b",
-        "1 b",
-        "1th b",
-        "1st b",
-        "class 1b",
-        "class 1 b",
-        "one b",
-        "oneth b"
-      ]
-    },
-    "SKG B": {
-      "rooms": [
-        "28"
-      ],
-      "aliases": [
-        "skg b"
-      ]
-    },
-    "1D": {
-      "rooms": [
-        "117"
-      ],
-      "aliases": [
-        "1d",
-        "1 d",
-        "1th d",
-        "1st d",
-        "class 1d",
-        "class 1 d",
-        "one d",
-        "oneth d"
-      ]
-    },
-    "SKG D": {
-      "rooms": [
-        "117"
-      ],
-      "aliases": [
-        "skg d"
-      ]
-    },
-    "1C": {
-      "rooms": [
-        "35"
-      ],
-      "aliases": [
-        "1c",
-        "1 c",
-        "1th c",
-        "1st c",
-        "class 1c",
-        "class 1 c",
-        "one c",
-        "oneth c"
-      ]
-    },
-    "SKG C": {
-      "rooms": [
-        "35"
-      ],
-      "aliases": [
-        "skg c"
-      ]
-    },
-    "1E": {
-      "rooms": [
-        "122"
-      ],
-      "aliases": [
-        "1e",
-        "1 e",
-        "1th e",
-        "1st e",
-        "class 1e",
-        "class 1 e",
-        "one e",
-        "oneth e"
-      ]
-    },
-    "SKG E": {
-      "rooms": [
-        "122"
-      ],
-      "aliases": [
-        "skg e"
-      ]
-    },
-    "1F": {
-      "rooms": [
-        "118"
-      ],
-      "aliases": [
-        "1f",
-        "1 f",
-        "1th f",
-        "1st f",
-        "class 1f",
-        "class 1 f",
-        "one f",
-        "oneth f"
-      ]
-    },
-    "SKG F": {
-      "rooms": [
-        "118"
-      ],
-      "aliases": [
-        "skg f"
-      ]
-    },
-    "1G": {
-      "rooms": [
-        "119"
-      ],
-      "aliases": [
-        "1g",
-        "1 g",
-        "1th g",
-        "1st g",
-        "class 1g",
-        "class 1 g",
-        "one g",
-        "oneth g"
-      ]
-    },
-    "SKG G": {
-      "rooms": [
-        "119"
-      ],
-      "aliases": [
-        "skg g"
-      ]
-    },
-    "1H": {
-      "rooms": [
-        "E- 6"
-      ],
-      "aliases": [
-        "1h",
-        "1 h",
-        "1th h",
-        "1st h",
-        "class 1h",
-        "class 1 h",
-        "one h",
-        "oneth h"
-      ]
-    },
-    "2A": {
-      "rooms": [
-        "123"
-      ],
-      "aliases": [
-        "2a",
-        "2 a",
-        "2th a",
-        "2st a",
-        "class 2a",
-        "class 2 a",
-        "two a",
-        "twoth a"
-      ]
-    },
-    "2B": {
-      "rooms": [
-        "124"
-      ],
-      "aliases": [
-        "2b",
-        "2 b",
-        "2th b",
-        "2st b",
-        "class 2b",
-        "class 2 b",
-        "two b",
-        "twoth b"
-      ]
-    },
-    "2C": {
-      "rooms": [
-        "136"
-      ],
-      "aliases": [
-        "2c",
-        "2 c",
-        "2th c",
-        "2st c",
-        "class 2c",
-        "class 2 c",
-        "two c",
-        "twoth c"
-      ]
-    },
-    "2D": {
-      "rooms": [
-        "125"
-      ],
-      "aliases": [
-        "2d",
-        "2 d",
-        "2th d",
-        "2st d",
-        "class 2d",
-        "class 2 d",
-        "two d",
-        "twoth d"
-      ]
-    },
-    "3A": {
-      "rooms": [
-        "209"
-      ],
-      "aliases": [
-        "3a",
-        "3 a",
-        "3th a",
-        "3st a",
-        "class 3a",
-        "class 3 a",
-        "three a",
-        "threeth a"
-      ]
-    },
-    "2E": {
-      "rooms": [
-        "135"
-      ],
-      "aliases": [
-        "2e",
-        "2 e",
-        "2th e",
-        "2st e",
-        "class 2e",
-        "class 2 e",
-        "two e",
-        "twoth e"
-      ]
-    },
-    "3B": {
-      "rooms": [
-        "201"
-      ],
-      "aliases": [
-        "3b",
-        "3 b",
-        "3th b",
-        "3st b",
-        "class 3b",
-        "class 3 b",
-        "three b",
-        "threeth b"
-      ]
-    },
-    "2F": {
-      "rooms": [
-        "126"
-      ],
-      "aliases": [
-        "2f",
-        "2 f",
-        "2th f",
-        "2st f",
-        "class 2f",
-        "class 2 f",
-        "two f",
-        "twoth f"
-      ]
-    },
-    "3C": {
-      "rooms": [
-        "208"
-      ],
-      "aliases": [
-        "3c",
-        "3 c",
-        "3th c",
-        "3st c",
-        "class 3c",
-        "class 3 c",
-        "three c",
-        "threeth c"
-      ]
-    },
-    "2G": {
-      "rooms": [
-        "134"
-      ],
-      "aliases": [
-        "2g",
-        "2 g",
-        "2th g",
-        "2st g",
-        "class 2g",
-        "class 2 g",
-        "two g",
-        "twoth g"
-      ]
-    },
-    "3D": {
-      "rooms": [
-        "207"
-      ],
-      "aliases": [
-        "3d",
-        "3 d",
-        "3th d",
-        "3st d",
-        "class 3d",
-        "class 3 d",
-        "three d",
-        "threeth d"
-      ]
-    },
-    "2H": {
-      "rooms": [
-        "132"
-      ],
-      "aliases": [
-        "2h",
-        "2 h",
-        "2th h",
-        "2st h",
-        "class 2h",
-        "class 2 h",
-        "two h",
-        "twoth h"
-      ]
-    },
-    "3E": {
-      "rooms": [
-        "203"
-      ],
-      "aliases": [
-        "3e",
-        "3 e",
-        "3th e",
-        "3st e",
-        "class 3e",
-        "class 3 e",
-        "three e",
-        "threeth e"
-      ]
-    },
-    "2I": {
-      "rooms": [
-        "131"
-      ],
-      "aliases": [
-        "2i",
-        "2 i",
-        "2th i",
-        "2st i",
-        "class 2i",
-        "class 2 i",
-        "two i",
-        "twoth i"
-      ]
-    },
-    "3F": {
-      "rooms": [
-        "204"
-      ],
-      "aliases": [
-        "3f",
-        "3 f",
-        "3th f",
-        "3st f",
-        "class 3f",
-        "class 3 f",
-        "three f",
-        "threeth f"
-      ]
-    },
-    "3G": {
-      "rooms": [
-        "204 E"
-      ],
-      "aliases": [
-        "3g",
-        "3 g",
-        "3th g",
-        "3st g",
-        "class 3g",
-        "class 3 g",
-        "three g",
-        "threeth g"
-      ]
-    },
-    "126 A": {
-      "rooms": [
-        "4 G"
-      ],
-      "aliases": [
-        "126 a"
-      ]
-    },
-    "5A": {
-      "rooms": [
-        "N-1"
-      ],
-      "aliases": [
-        "5a",
-        "5 a",
-        "5th a",
-        "5st a",
-        "class 5a",
-        "class 5 a",
-        "five a",
-        "fiveth a"
-      ]
-    },
-    "5B": {
-      "rooms": [
-        "N-6"
-      ],
-      "aliases": [
-        "5b",
-        "5 b",
-        "5th b",
-        "5st b",
-        "class 5b",
-        "class 5 b",
-        "five b",
-        "fiveth b"
-      ]
-    },
-    "4A": {
-      "rooms": [
-        "221"
-      ],
-      "aliases": [
-        "4a",
-        "4 a",
-        "4th a",
-        "4st a",
-        "class 4a",
-        "class 4 a",
-        "four a",
-        "fourth a"
-      ]
-    },
-    "5C": {
-      "rooms": [
-        "N-9"
-      ],
-      "aliases": [
-        "5c",
-        "5 c",
-        "5th c",
-        "5st c",
-        "class 5c",
-        "class 5 c",
-        "five c",
-        "fiveth c"
-      ]
-    },
-    "4B": {
-      "rooms": [
-        "210"
-      ],
-      "aliases": [
-        "4b",
-        "4 b",
-        "4th b",
-        "4st b",
-        "class 4b",
-        "class 4 b",
-        "four b",
-        "fourth b"
-      ]
-    },
-    "5D": {
-      "rooms": [
-        "N-10"
-      ],
-      "aliases": [
-        "5d",
-        "5 d",
-        "5th d",
-        "5st d",
-        "class 5d",
-        "class 5 d",
-        "five d",
-        "fiveth d"
-      ]
-    },
-    "4C": {
-      "rooms": [
-        "220"
-      ],
-      "aliases": [
-        "4c",
-        "4 c",
-        "4th c",
-        "4st c",
-        "class 4c",
-        "class 4 c",
-        "four c",
-        "fourth c"
-      ]
-    },
-    "5E": {
-      "rooms": [
-        "N-12"
-      ],
-      "aliases": [
-        "5e",
-        "5 e",
-        "5th e",
-        "5st e",
-        "class 5e",
-        "class 5 e",
-        "five e",
-        "fiveth e"
-      ]
-    },
-    "4D": {
-      "rooms": [
-        "219"
-      ],
-      "aliases": [
-        "4d",
-        "4 d",
-        "4th d",
-        "4st d",
-        "class 4d",
-        "class 4 d",
-        "four d",
-        "fourth d"
-      ]
-    },
-    "5F": {
-      "rooms": [
-        "N-13"
-      ],
-      "aliases": [
-        "5f",
-        "5 f",
-        "5th f",
-        "5st f",
-        "class 5f",
-        "class 5 f",
-        "five f",
-        "fiveth f"
-      ]
-    },
-    "4E": {
-      "rooms": [
-        "217"
-      ],
-      "aliases": [
-        "4e",
-        "4 e",
-        "4th e",
-        "4st e",
-        "class 4e",
-        "class 4 e",
-        "four e",
-        "fourth e"
-      ]
-    },
-    "5G": {
-      "rooms": [
-        "N-14"
-      ],
-      "aliases": [
-        "5g",
-        "5 g",
-        "5th g",
-        "5st g",
-        "class 5g",
-        "class 5 g",
-        "five g",
-        "fiveth g"
-      ]
-    },
-    "4F": {
-      "rooms": [
-        "216"
-      ],
-      "aliases": [
-        "4f",
-        "4 f",
-        "4th f",
-        "4st f",
-        "class 4f",
-        "class 4 f",
-        "four f",
-        "fourth f"
-      ]
-    },
-    "214 A": {
-      "rooms": [
-        "Chemistry Lab N-7"
-      ],
-      "aliases": [
-        "214 a"
-      ]
-    },
-    "6A": {
-      "rooms": [
-        "N-28A"
-      ],
-      "aliases": [
-        "6a",
-        "6 a",
-        "6th a",
-        "6st a",
-        "class 6a",
-        "class 6 a",
-        "six a",
-        "sixth a"
-      ]
-    },
-    "6B": {
-      "rooms": [
-        "N-28"
-      ],
-      "aliases": [
-        "6b",
-        "6 b",
-        "6th b",
-        "6st b",
-        "class 6b",
-        "class 6 b",
-        "six b",
-        "sixth b"
-      ]
-    },
-    "6C": {
-      "rooms": [
-        "N-23"
-      ],
-      "aliases": [
-        "6c",
-        "6 c",
-        "6th c",
-        "6st c",
-        "class 6c",
-        "class 6 c",
-        "six c",
-        "sixth c"
-      ]
-    },
-    "6D": {
-      "rooms": [
-        "N-20"
-      ],
-      "aliases": [
-        "6d",
-        "6 d",
-        "6th d",
-        "6st d",
-        "class 6d",
-        "class 6 d",
-        "six d",
-        "sixth d"
-      ]
-    },
-    "7A": {
-      "rooms": [
-        "N-34"
-      ],
-      "aliases": [
-        "7a",
-        "7 a",
-        "7th a",
-        "7st a",
-        "class 7a",
-        "class 7 a",
-        "seven a",
-        "seventh a"
-      ]
-    },
-    "6E": {
-      "rooms": [
-        "N-19"
-      ],
-      "aliases": [
-        "6e",
-        "6 e",
-        "6th e",
-        "6st e",
-        "class 6e",
-        "class 6 e",
-        "six e",
-        "sixth e"
-      ]
-    },
-    "7B": {
-      "rooms": [
-        "N-35"
-      ],
-      "aliases": [
-        "7b",
-        "7 b",
-        "7th b",
-        "7st b",
-        "class 7b",
-        "class 7 b",
-        "seven b",
-        "seventh b"
-      ]
-    },
-    "6F": {
-      "rooms": [
-        "N-16"
-      ],
-      "aliases": [
-        "6f",
-        "6 f",
-        "6th f",
-        "6st f",
-        "class 6f",
-        "class 6 f",
-        "six f",
-        "sixth f"
-      ]
-    },
-    "7C": {
-      "rooms": [
-        "N-36"
-      ],
-      "aliases": [
-        "7c",
-        "7 c",
-        "7th c",
-        "7st c",
-        "class 7c",
-        "class 7 c",
-        "seven c",
-        "seventh c"
-      ]
-    },
-    "6G": {
-      "rooms": [
-        "N-15"
-      ],
-      "aliases": [
-        "6g",
-        "6 g",
-        "6th g",
-        "6st g",
-        "class 6g",
-        "class 6 g",
-        "six g",
-        "sixth g"
-      ]
-    },
-    "7D": {
-      "rooms": [
-        "N-38"
-      ],
-      "aliases": [
-        "7d",
-        "7 d",
-        "7th d",
-        "7st d",
-        "class 7d",
-        "class 7 d",
-        "seven d",
-        "seventh d"
-      ]
-    },
-    "7E": {
-      "rooms": [
-        "N-39"
-      ],
-      "aliases": [
-        "7e",
-        "7 e",
-        "7th e",
-        "7st e",
-        "class 7e",
-        "class 7 e",
-        "seven e",
-        "seventh e"
-      ]
-    },
-    "7F": {
-      "rooms": [
-        "N-42"
-      ],
-      "aliases": [
-        "7f",
-        "7 f",
-        "7th f",
-        "7st f",
-        "class 7f",
-        "class 7 f",
-        "seven f",
-        "seventh f"
-      ]
-    },
-    "7G": {
-      "rooms": [
-        "N-43"
-      ],
-      "aliases": [
-        "7g",
-        "7 g",
-        "7th g",
-        "7st g",
-        "class 7g",
-        "class 7 g",
-        "seven g",
-        "seventh g"
-      ]
-    },
-    "8A": {
-      "rooms": [
-        "N-49"
-      ],
-      "aliases": [
-        "8a",
-        "8 a",
-        "8th a",
-        "8st a",
-        "class 8a",
-        "class 8 a",
-        "eight a",
-        "eightth a"
-      ]
-    },
-    "8B": {
-      "rooms": [
-        "N-50"
-      ],
-      "aliases": [
-        "8b",
-        "8 b",
-        "8th b",
-        "8st b",
-        "class 8b",
-        "class 8 b",
-        "eight b",
-        "eightth b"
-      ]
-    },
-    "8C": {
-      "rooms": [
-        "N-51"
-      ],
-      "aliases": [
-        "8c",
-        "8 c",
-        "8th c",
-        "8st c",
-        "class 8c",
-        "class 8 c",
-        "eight c",
-        "eightth c"
-      ]
-    },
-    "8D": {
-      "rooms": [
-        "N-54"
-      ],
-      "aliases": [
-        "8d",
-        "8 d",
-        "8th d",
-        "8st d",
-        "class 8d",
-        "class 8 d",
-        "eight d",
-        "eightth d"
-      ]
-    },
-    "8E": {
-      "rooms": [
-        "N-55"
-      ],
-      "aliases": [
-        "8e",
-        "8 e",
-        "8th e",
-        "8st e",
-        "class 8e",
-        "class 8 e",
-        "eight e",
-        "eightth e"
-      ]
-    },
-    "8F": {
-      "rooms": [
-        "N-58"
-      ],
-      "aliases": [
-        "8f",
-        "8 f",
-        "8th f",
-        "8st f",
-        "class 8f",
-        "class 8 f",
-        "eight f",
-        "eightth f"
-      ]
-    },
-    "8G": {
-      "rooms": [
-        "N-59"
-      ],
-      "aliases": [
-        "8g",
-        "8 g",
-        "8th g",
-        "8st g",
-        "class 8g",
-        "class 8 g",
-        "eight g",
-        "eightth g"
-      ]
-    }
+    "9th A": ["Room 1, Block-A (Ground Floor)"],
+    "9th B": ["Room 12, Block-A (Ground Floor)"],
+    "9th C": ["Room 4, Block-A (Ground Floor)"],
+    "9th D": ["Room 5, Block-A (Ground Floor)"],
+    "9th E": ["Room 112, Block-A (Ground Floor)"],
+    "9th F": ["Room 106E, Block-A (Ground Floor)"],
+    "9th G": ["Room 229E, Block-A2 (Second Floor)"],
+
+    "10th A": ["Room 105, Block-A1 (First Floor)"],
+    "10th B": ["Room 106, Block-A1 (First Floor)"],
+    "10th C": ["Room 229, Block-A2 (Second Floor)"],
+    "10th D": ["Room 228, Block-A2 (Second Floor)"],
+    "10th E": ["Room 227, Block-A2 (Second Floor)"],
+    "10th F": ["Room 232, Block-A2 (Second Floor)"],
+    "10th G": ["Room 225, Block-A2 (Second Floor)"],
+
+    "11th": ["Room N-45, NX Building (3rd Floor)"],
+    "12th": ["Room N-46, NX Building (3rd Floor)"],
+
+    "Chemistry Lab": ["Room N-7, NX Building (Ground Floor)"],
+    "Physics Lab": ["Room N-22, NX Building (2nd Floor)"],
+    "Biology Lab": ["Room N-8, NX Building (Ground Floor)"],
+    "Maths Lab": ["Room 104, Block-A1 (First Floor)"],
+    "Composite Lab": ["Room 129, Block-D1 (First Floor)"],
+    "Computer Lab 1": ["Room 11, Block-A (Ground Floor)"],
+    "Computer Lab 2": ["Room N-19, NX Building (Ground Floor)"],
+    "Computer Lab 3": ["Room 3, Block-A (Ground Floor)"],
+    "Geography Lab": ["Room 130, Block-D1 (First Floor)"],
+    "Language Lab": ["Room N-29, NX Building (1st Floor)"],
+
+    "Art & Craft 1": ["Rooms 110 & 111, Block-A1 (First Floor)"],
+    "Art & Craft 2": ["Room 233, Block-A2 (Second Floor)"],
+    "Art Room 3": ["Room N-38, NX Building (1st Floor)"],
+
+    "Dance Room 1": ["Room N-39, NX Building (1st Floor)"],
+    "Dance Room 2": ["Room 215, Block-D2 (Second Floor)"],
+    "Rhythm Room": ["Room 218, Block-D2 (Second Floor)"],
+
+    "Design Lab 1": ["Room 211, Block-D2 (Second Floor)"],
+    "Design Lab 2": ["Room N-53, NX Building (3rd Floor)"],
+
+    "Yoga Room 1": ["Room 105E, Block-A1 (First Floor)"],
+    "Yoga Room 2": ["Room N-44, NX Building (2nd Floor)"],
+
+    "Library B1": ["Rooms 113 & 114, Block-B1"],
+    "Library NX": ["Room N-37, NX Building (1st Floor)"],
+
+    "Music Room 1": ["Room 115, Block-B1"],
+    "Music Room 2": ["Room 223, Block-B2"],
+
+    "MPH": ["Rooms 224A & 224B, Block-B2"],
+    "Indoor Games": ["Room 224, Block-B1"],
+
+    "AV Room": ["Room 10, Block-A (Ground Floor)"],
+    "Amphitheatre": ["Block-A (Ground Floor)"],
+    "Triveni Hall": ["Room 32, Block-D (Ground Floor)"],
+
+    "Medical Room 1": ["Room 20, Block-C (Ground Floor)"],
+    "Medical Room 2": ["Room N-27, NX Building (2nd Floor)"],
+
+    "Nursery C": ["Room 19, Block-C (Ground Floor)"],
+    "Nursery D": ["Room 26, Block-C (Ground Floor)"],
+    "Nursery E": ["Room 25, Block-C (Ground Floor)"],
+    "Nursery F": ["Room 21, Block-C (Ground Floor)"],
+    "Nursery G": ["Room 22, Block-C (Ground Floor)"],
+
+    "SKG A": ["Room 27, Block-C (Ground Floor)"],
+    "SKG B": ["Room 28, Block-D (Ground Floor)"],
+    "SKG C": ["Room 35, Block-D (Ground Floor)"],
+    "SKG D": ["Room 117, Block-C1 (First Floor)"],
+    "SKG E": ["Room 122, Block-C1 (First Floor)"],
+    "SKG F": ["Room 118, Block-C1 (First Floor)"],
+    "SKG G": ["Room 119, Block-C1 (First Floor)"],
+
+    "1H": ["Room E-6, Block-C1 (First Floor)"],
+    "1I": ["Room E-7, Block-C1 (First Floor)"],
+
+    "2A": ["Room 123, Block-C1 (First Floor)"],
+    "2B": ["Room 124, Block-C1 (First Floor)"],
+    "2C": ["Room 136, Block-D1 (First Floor)"],
+    "2D": ["Room 125, Block-D1 (First Floor)"],
+    "2E": ["Room 135, Block-D1 (First Floor)"],
+    "2F": ["Room 126, Block-D1 (First Floor)"],
+    "2G": ["Room 134, Block-D1 (First Floor)"],
+    "2H": ["Room 132, Block-D1 (First Floor)"],
+    "2I": ["Room 131, Block-D1 (First Floor)"],
+
+    "3A": ["Room 209, Block-C2 (Second Floor)"],
+    "3B": ["Room 201, Block-C2 (Second Floor)"],
+    "3C": ["Room 208, Block-C2 (Second Floor)"],
+    "3D": ["Room 207, Block-C2 (Second Floor)"],
+    "3E": ["Room 203, Block-C2 (Second Floor)"],
+    "3F": ["Room 204, Block-C2 (Second Floor)"],
+    "3G": ["Room 204E, Block-C2 (Second Floor)"],
+
+    "4A": ["Room 221, Block-D2 (Second Floor)"],
+    "4B": ["Room 210, Block-D2 (Second Floor)"],
+    "4C": ["Room 220, Block-D2 (Second Floor)"],
+    "4D": ["Room 219, Block-D2 (Second Floor)"],
+    "4E": ["Room 217, Block-D2 (Second Floor)"],
+    "4F": ["Room 216, Block-D2 (Second Floor)"],
+    "4G": ["Room N-1A, NX Building (Ground Floor)"],
+
+    "5A": ["Room N-1, NX Building (Ground Floor)"],
+    "5B": ["Room N-6, NX Building (Ground Floor)"],
+    "5C": ["Room N-9, NX Building (Ground Floor)"],
+    "5D": ["Room N-10, NX Building (Ground Floor)"],
+    "5E": ["Room N-12, NX Building (Ground Floor)"],
+    "5F": ["Room N-13, NX Building (Ground Floor)"],
+    "5G": ["Room N-14, NX Building (Ground Floor)"],
+
+    "6A": ["Room N-28A, NX Building (1st Floor)"],
+    "6B": ["Room N-28, NX Building (1st Floor)"],
+    "6C": ["Room N-23, NX Building (1st Floor)"],
+    "6D": ["Room N-20, NX Building (1st Floor)"],
+    "6E": ["Room N-19, NX Building (1st Floor)"],
+    "6F": ["Room N-16, NX Building (1st Floor)"],
+    "6G": ["Room N-15, NX Building (1st Floor)"],
+
+    "7A": ["Room N-34, NX Building (1st Floor)"],
+    "7B": ["Room N-35, NX Building (1st Floor)"],
+    "7C": ["Room N-36, NX Building (1st Floor)"],
+    "7D": ["Room N-38, NX Building (1st Floor)"],
+    "7E": ["Room N-39, NX Building (1st Floor)"],
+    "7F": ["Room N-42, NX Building (1st Floor)"],
+    "7G": ["Room N-43, NX Building (1st Floor)"],
+
+    "8A": ["Room N-49, NX Building (3rd Floor)"],
+    "8B": ["Room N-50, NX Building (3rd Floor)"],
+    "8C": ["Room N-51, NX Building (3rd Floor)"],
+    "8D": ["Room N-54, NX Building (3rd Floor)"],
+    "8E": ["Room N-55, NX Building (3rd Floor)"],
+    "8F": ["Room N-58, NX Building (3rd Floor)"],
+    "8G": ["Room N-59, NX Building (3rd Floor)"]
   },
+
   "infrastructure": {
     "IT enabled classrooms": "49 ventilated classrooms with digital setup",
     "IT Labs": "2 labs teaching hardcore programming",
@@ -1242,6 +152,7 @@
     "Kids Pool & Play Pen": "Facilities for pre-primary fine motor skills",
     "Activity Rooms": "7 rooms for yoga, dance, art, music"
   },
+
   "co_curricular": {
     "Yoga": "Regular yoga sessions offered",
     "Martial Arts": "TAE and martial arts training",
@@ -1251,8 +162,9 @@
     "Games": "Indoor & outdoor sports including skating, chess, table tennis",
     "Clubs": "Math club, Science club, Nature club, Drama, Reading, Katha, Health & Wellness"
   },
+
   "mission_vision": {
-    "vision": "To produce self‑motivated lifelong learners who will be dynamic and proactive leaders.",
+    "vision": "To produce self-motivated lifelong learners who will be dynamic and proactive leaders.",
     "mission": "Provide best opportunities in a safe, inclusive environment; continual improvement in tech, curriculum & human resources.",
     "core_values": [
       "Belief in lifelong learning & holistic approach",
@@ -1262,6 +174,7 @@
       "Adaptive learning ambience"
     ]
   },
+
   "staff": {
     "principal": "Mrs. Ranjana Jangra",
     "vice principal": "Mrs. Ruchita Chauhan",
@@ -1269,16 +182,19 @@
     "school co-ordinator": "Mrs. Kirti Saini",
     "school captain": "Master Darsh Rathi",
     "school vice captain": "Miss Devanshi Pandey",
-    ],
+
+
     "contact details": [
       "Darsh Rathi (School Captain):- darsh.3180@birlaschoolkalyan.com",
       "Devanshi Pandey (School Vice Captain):- devanshi.3212@birlaschoolkalyan.com",
       "Ekansh Garg (Chatbot Developer):- ekansh.6874@birlaschoolkalyan.com"
     ],
+
     "chatbot-developer": {
       "name": "Master Ekansh Garg",
       "email": "ekansh.6874@birlaschoolkalyan.com"
     },
+
     "teaching_staff_overview": "More than 100 passionate and dynamic teachers committed to quality education.",
     "key_faculty_members": [
       "Mrs. Ranjna Jangra – Principal",
