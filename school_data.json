@@ -73,7 +73,14 @@
     "SKG E": ["Room 122, Block-C1 (First Floor)"],
     "SKG F": ["Room 118, Block-C1 (First Floor)"],
     "SKG G": ["Room 119, Block-C1 (First Floor)"],
-
+    
+    "1A": ["Room 27, Block-C (Ground Floor)"],
+    "1B": ["Room 28, Block-D (Ground Floor)"],
+    "1C": ["Room 35, Block-D (Ground Floor)"],
+    "1D": ["Room 117, Block-C1 (First Floor)"],
+    "1E": ["Room 122, Block-C1 (First Floor)"],
+    "1F": ["Room 118, Block-C1 (First Floor)"],
+    "1G": ["Room 119, Block-C1 (First Floor)"],
     "1H": ["Room E-6, Block-C1 (First Floor)"],
     "1I": ["Room E-7, Block-C1 (First Floor)"],
 
