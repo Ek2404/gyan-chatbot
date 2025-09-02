@@ -50,10 +50,23 @@ def get_school_info(query):
         # -----------------------------
         # 1. School Info Section
         # -----------------------------
-        # Match location
+        # Match location (supports both flat + dict format)
         for key, value in school_data.get("locations", {}).items():
-            if key.lower() in query_lower or normalize(key) in norm_query:
-                return f"The location of {key} is as follows: {value}."
+            loc_str = ""
+            aliases = []
+
+            if isinstance(value, str):  # flat JSON
+                loc_str = value
+            elif isinstance(value, dict):  # rich JSON
+                loc_str = ", ".join(value.get("rooms", []))
+                aliases = value.get("aliases", [])
+
+            if (
+                key.lower() in query_lower
+                or normalize(key) in norm_query
+                or any(alias in norm_query for alias in aliases)
+            ):
+                return f"The location of {key} is as follows: {loc_str}."
 
         # Infrastructure
         for key, value in school_data.get("infrastructure", {}).items():
