@@ -15,13 +15,37 @@ def get_school_info(query):
         with open(os.path.join(base_path, "conclave_data.json")) as f:
             conclave_data = json.load(f)
 
-        # Normalization helper (removes spaces, dashes, lowercase)
+        # -----------------------------
+        # Normalization helper
+        # -----------------------------
         def normalize(text):
-            return text.lower().replace("-", "").replace(" ", "")
+            text = text.lower().replace("-", "").replace(" ", "")
+
+            # Number & ordinal mapping
+            num_map = {
+                "first": "1", "1st": "1", "one": "1",
+                "second": "2", "2nd": "2", "two": "2",
+                "third": "3", "3rd": "3", "three": "3",
+                "fourth": "4", "4th": "4", "four": "4",
+                "fifth": "5", "5th": "5", "five": "5",
+                "sixth": "6", "6th": "6", "six": "6",
+                "seventh": "7", "7th": "7", "seven": "7",
+                "eighth": "8", "8th": "8", "eight": "8",
+                "ninth": "9", "9th": "9", "nine": "9",
+                "tenth": "10", "10th": "10", "ten": "10",
+                "eleventh": "11", "11th": "11", "eleven": "11",
+                "twelfth": "12", "12th": "12", "twelve": "12"
+            }
+
+            for word, digit in num_map.items():
+                if word in text:
+                    text = text.replace(word, digit)
+
+            return text
 
         query_lower = query.lower()
         norm_query = normalize(query)
-        print(f"📚 School/Conclave query: '{query}'")
+        print(f"📚 School/Conclave query: '{query}' → '{norm_query}'")
 
         # -----------------------------
         # 1. School Info Section
@@ -174,9 +198,9 @@ def get_school_info(query):
                     return f"{matched_event['event_name']} ({matched_event['class_range']}): {matched_event['description']}"
 
         # -----------------------------
-        # 3. No match → let APU handle
+        # 3. No match → fallback
         # -----------------------------
-        print("❌ No school/conclave match found → fallback to APU")
+        print("❌ No school/conclave match found → fallback to API")
         return None
 
     except Exception as e:
