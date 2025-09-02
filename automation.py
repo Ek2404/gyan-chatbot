@@ -50,23 +50,23 @@ def get_school_info(query):
         # -----------------------------
         # 1. School Info Section
         # -----------------------------
-        # Match location (supports both flat + dict format)
+        # Match location
         for key, value in school_data.get("locations", {}).items():
-            loc_str = ""
+            # New JSON: dict with rooms + aliases
             aliases = []
-
-            if isinstance(value, str):  # flat JSON
-                loc_str = value
-            elif isinstance(value, dict):  # rich JSON
-                loc_str = ", ".join(value.get("rooms", []))
+            if isinstance(value, dict):
+                rooms = value.get("rooms", [])
                 aliases = value.get("aliases", [])
+            else:
+                rooms = [value]  # backward compatibility
+                aliases = []
 
             if (
                 key.lower() in query_lower
                 or normalize(key) in norm_query
-                or any(alias in norm_query for alias in aliases)
+                or any(normalize(alias) in norm_query for alias in aliases)
             ):
-                return f"The location of {key} is as follows: {loc_str}."
+                return f"The location of {key} is: {', '.join(rooms)}."
 
         # Infrastructure
         for key, value in school_data.get("infrastructure", {}).items():
