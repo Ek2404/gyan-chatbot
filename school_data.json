@@ -44,8 +44,10 @@
     "Yoga Room 1": ["Room 105E, Block-A1 (First Floor)"],
     "Yoga Room 2": ["Room N-44, NX Building (2nd Floor)"],
 
-    "Library B1": ["Rooms 113 & 114, Block-B1"],
-    "Library NX": ["Room N-37, NX Building (1st Floor)"],
+    "Library 1": ["Rooms 113 & 114, Block-B1"],
+    "Library 2": ["Room N-37, NX Building (1st Floor)"],
+    "Old Library": ["Rooms 113 & 114, Block-B1"],
+    "New Library": ["Room N-37, NX Building (1st Floor)"],
 
     "Music Room 1": ["Room 115, Block-B1"],
     "Music Room 2": ["Room 223, Block-B2"],
